@@ -1,0 +1,418 @@
+ersion: "3.1"
+
+stories:
+
+  - story: Odgovor kao uvodni pozdrav
+    steps:
+      - intent: pozdrav
+      - action: utter_pozdrav
+
+  - story: Odgovor kao rastanak
+    steps:
+      - intent: rastanak
+      - action: utter_rastanak
+
+  - story: Odgovor kao zahvala
+    steps:
+      - intent: zahvala
+      - action: utter_zahvala
+
+  - story: info_studij
+    steps:
+      - intent: informacije_o_studiju
+      - action: utter_infomacije_o_studiju
+
+  - story: opis prijediplomskog studija
+    steps:
+      - intent: opis_prijediplomski
+      - action: utter_opis_prijediplomskog
+
+  - story: opis diplomskog studija
+    steps:
+      - intent: opis_diplomski
+      - action: utter_opis_diplomskog
+
+  - story: trajanje studijskog programa
+    steps:
+      - intent: trajanje_studija
+      - action: utter_trajanje_studija
+
+  - story: razine studijskih programa
+    steps:
+      - intent: razine_studija
+      - action: utter_razine_studija
+
+  - story: upis prijediplosmki
+    steps:
+      - intent: upis_prijediplomski
+      - action: utter_upis_prijediplomski
+
+  - story: upis diplomski
+    steps:
+      - intent: upis_diplomski
+      - action: utter_upis_diplomski
+
+  - story: informacija o redovnom studiju
+    steps:
+      - intent: redovno_studiranje
+      - action: utter_informacije_o_redovnom
+
+  - story: informacija o izvanrednom studiju
+    steps:
+      - intent: izvanredno_studiranje
+      - action: utter_informacije_o_izvanrednom
+
+  - story: troškovi info
+    steps:
+      - intent: troškovi_studija
+      - action: utter_troškovi_studija
+
+  - story: titula zavrsetak
+    steps:
+      - intent: titula_nakon_studija
+      - action: utter_titula_nakon_studija
+
+  - story: izazovi studiranja
+    steps:
+      - intent: izazovi_studiranja_ikt
+      - action: utter_izazovi_studiranja_ikt
+
+  - story: prednost studuranja
+    steps:
+      - intent: prednosti_studiranja_ikt
+      - action: utter_prednosti_studiranja_ikt
+
+  - story: ishodi učenja prijed
+    steps:
+      - intent: ishodi_ucenja_prijediplomski
+      - action: utter_ishodi_ucenja_prijediplomski
+
+  - story: ishodi učenja diplom
+    steps:
+      - intent: ishodi_ucenja_diplomski
+      - action: utter_ishodi_ucenja_diplomski
+
+  - story: mogućnosti nakon završetka studija
+    steps:
+      - intent: mogućnosti_nakon_završetka_studija
+      - action: utter_mogucnosti_nakon_studija
+
+  - story: popis kolegija prijdip
+    steps:
+      - intent: popis_kolegija_prijediplomski
+      - action: utter_popis_kolegija_prijediplomski
+
+  - story: popis kolegija diplom
+    steps:
+      - intent: popis_kolegija_diplomski
+      - action: utter_popis_kolegija_diplomski
+
+  - story: polaganje kolegija
+    steps:
+      - intent: polaganje_kolegija
+      - action: utter_polaganje_kolegija
+
+  - story: prijava ispita
+    steps:
+      - intent: prijava_ispita
+      - action: utter_prijava_ispita
+
+
+  - story: najzahtjeviji kolegij
+    steps:
+      - intent: najzahtjevniji_kolegiji
+      - action: utter_najzahtjevniji_kolegiji
+
+
+  - story: izborni info
+    steps:
+      - intent: izborni_kolegiji
+      - action: utter_izborni_kolegiji
+
+  - story: praksa
+    steps:
+      - intent: semestralna_stručna_praksa
+      - action: utter_semestralna_stručna_praksa
+
+  - story: mentor
+    steps:
+      - intent: izbor_mentora
+      - action: utter_izbor_mentora
+
+  - story: prijava završnog
+    steps:
+      - intent: prijava_završnog_diplomskog
+      - action: utter_prijava_završnog_diplomskog
+
+  - story: pisanje završnog
+    steps:
+      - intent: pisanje_završnog_diplomskog
+      - action: utter_pisanje_završnog_diplomskog
+
+  - story: obrana završnog
+    steps:
+      - intent: obrana_završnog_diplomskog
+      - action: utter_obrana_završnog_diplomskog
+
+  - story: dekan Veleri
+    steps:
+      - intent: dekan
+      - action: utter_dekan
+
+  - story: procelnik IKT
+    steps:
+      - intent: pročelnik_ikt_odjela
+      - action: utter_pročelinik_ikt_odjela
+
+  - story: mentoriranje
+    steps:
+      - intent: mentoriranje_studenta
+      - action: utter_mentoriranje_studenta
+
+  - story: iksica_info
+    steps:
+      - intent: sto_je_iksica
+      - action: utter_sto_je_iksica
+
+  - story: iksica_izrada
+    steps:
+      - intent: izrada_iksice
+      - action: utter_izrada_iksice
+
+  - story: iksica_svrha
+    steps:
+      - intent: svrha_iksice
+      - action: utter_svrha_iksice
+
+  - story: iksica_nestanak
+    steps:
+      - intent: nestanak_iksice
+      - action: utter_nestanak_iksice
+
+  - story: jmbag info
+    steps:
+      - intent: jmbag
+      - action: utter_jmbag
+
+  - story: kolegij info
+    steps:
+      - intent: kolegij_opis
+      - action: utter_kolegij
+
+  - story: ects info
+    steps:
+      - intent: ects_značenje
+      - action: utter_ects_značenje
+
+  - story: ects ostavrivanje
+    steps:
+      - intent: ects_ostvarivanje
+      - action: utter_ects_ostvarivanje
+
+  - story: semestar info
+    steps:
+      - intent: semestar_info
+      - action: utter_semestar_info
+
+  - story: studomat info
+    steps:
+      - intent: studomat
+      - action: utter_studomat
+
+  - story: studomat prijava
+    steps:
+      - intent: studomat_prijava_ispita
+      - action: utter_studomat_prijava_ispita
+
+  - story: studomat odjava
+    steps:
+      - intent: studomat_odjava_ispita
+      - action: utter_studomat_odjava_ispita
+
+  - story: studomat nemogućnost prijave
+    steps:
+      - intent: studomat_nemogucnost_prijave
+      - action: utter_studomat_nemogucnost_prijave
+
+  - story: studomat ponova prijava
+    steps:
+      - intent: studomat_ponovna_prijava_ispita
+      - action: utter_studomat_ponovna_prijava_ispita
+
+  - story: studomat pad
+    steps:
+      - intent: studomat_pad_ispita
+      - action: utter_studomat_pad_ispita
+
+  - story: merlin
+    steps:
+      - intent: moodle_merlin
+      - action: utter_moodle_merlin
+
+  - story: silabus
+    steps:
+      - intent: silabus_kolegija
+      - action: utter_silabus_kolegija
+
+  - story: outlook info
+    steps:
+      - intent: outlook
+      - action: utter_outlook
+
+  - story: brucos info
+    steps:
+      - intent: brucoš
+      - action: utter_brucoš
+
+  - story: apsolvent info
+    steps:
+      - intent: apsolvent
+      - action: utter_apsolvent
+
+  - story: alumni info
+    steps:
+      - intent: alumni
+      - action: utter_alumni
+
+  - story: kabinet info
+    steps:
+      - intent: kabinet
+      - action: utter_kabinet
+
+  - story: konzultacije info
+    steps:
+      - intent: konzultacije
+      - action: utter_konzultacije
+
+  - story: terminski_plan info
+    steps:
+      - intent: terminski_plan
+      - action: utter_terminski_plan
+
+  - story: seminar info
+    steps:
+      - intent: seminar
+      - action: utter_seminar
+
+  - story: kolokvij info
+    steps:
+      - intent: kolokvij
+      - action: utter_kolokvij
+
+  - story: kontinuirano_pracenje info
+    steps:
+      - intent: kontinuirano_pracenje
+      - action: utter_kontinuirano_pracenje
+
+  - story: ishodi info
+    steps:
+      - intent: ishodi
+      - action: utter_ishodi
+
+  - story: nositelj_kolegija info
+    steps:
+      - intent: nositelj_kolegija
+      - action: utter_nositelj_kolegija
+
+  - story: asistent_kolegija info
+    steps:
+      - intent: asistent_kolegija
+      - action: utter_asistent_kolegija
+
+  - story: referada info
+    steps:
+      - intent: referada
+      - action: utter_referada
+
+  - story: redovni_student info
+    steps:
+      - intent: redovni_student
+      - action: utter_redovni_student
+
+  - story: izvanredni_student info
+    steps:
+      - intent: izvanredni_student
+      - action: utter_izvanredni_student
+
+  - story: redovni_izvaredni_razlike info
+    steps:
+      - intent: redovni_izvaredni_razlike
+      - action: utter_redovni_izvaredni_razlike
+
+  - story: studenski_posao info
+    steps:
+      - intent: studenski_posao
+      - action: utter_studenski_posao
+
+  - story: prehrana info
+    steps:
+      - intent: prehrana
+      - action: utter_prehrana
+
+  - story: erasmus info
+    steps:
+      - intent: erasmus
+      - action: utter_erasmus
+
+  - story: knjižnica_radno_vrijeme_kontakt info
+    steps:
+      - intent: knjižnica_radno_vrijeme_kontakt
+      - action: utter_knjižnica_radno_vrijeme_kontakt
+
+  - story: referada_radno_vrijeme_kontakt info
+    steps:
+      - intent: referada_radno_vrijeme_kontakt
+      - action: utter_referada_radno_vrijeme_kontakt
+
+  - story: upisi prijediplomski
+    steps:
+      - intent: upis_prijediplomski
+      - action: utter_upis_prijediplomski
+
+  - story: upisi diplomski
+    steps:
+      - intent: upis_diplomski
+      - action: utter_upis_diplomski
+
+
+  - story: odgovori za sve prodekane
+    steps:
+      - intent: prodekani_svi
+      - action: utter_prodekani_svi
+
+  - story: Odgovor za prodekana za međunarodnu suradnju
+    steps:
+      - intent: prodekan_međunarodna
+      - action: utter_prodekan_medjunarodna
+
+  - story: Odgovor za prodekana za poslovne odnose
+    steps:
+      - intent: prodekan_poslovni
+      - action: utter_prodekan_poslovni_odnosi
+
+  - story: Odgovor prodekan za nastavu
+    steps:
+      - intent: prodekan_nastava
+      - action: utter_prodekan_nastava
+
+
+
+  - story: Prikaži nositelje kolegija
+    steps:
+      - intent: nositelji_asistenti_kolegija
+      - action: action_show_kolegij_nositelji
+
+  - story: Pružanje kontakta i konzultacija nastavnika
+    steps:
+      - intent: kontakt_nastavnici
+      - action: action_dohvati_podatke
+
+  - story: Pitanje koje je izvan područja rada
+    steps:
+      - intent: outside_scope
+      - action: utter_outside_scope
+
+  - story: Daj info o kolegiju
+    steps:
+      - intent: opis_kolegija
+      - action: action_provide_course_link

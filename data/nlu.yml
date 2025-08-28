@@ -1,0 +1,2715 @@
+version: "3.1"
+
+nlu:
+- intent: pozdrav
+  examples: |
+    - hej
+    - hello
+    - hi
+    - pozz
+    - dobar dan
+    - pozdrav
+    - poštovanje
+    - dobro jutro
+    - dobra večer
+    - bok
+    - zdravo
+    - jutro
+    - večer
+    - dan
+    - bogdaj
+    - yo
+
+- intent: rastanak
+  examples: |
+    - dobro, vidimo se!
+    - aj pozz
+    - čujemo se!
+    - vidimo se
+    - ajde bok
+    - doviđenja
+    - hvala i pozdrav
+    - do sljedećeg puta
+    - vidimo se poslje
+    - čujemo se poslje
+    - ćao
+    - lijepi pozdrav
+    - bye bye
+
+- intent: zahvala
+  examples: |
+    - hvala vam puno!
+    - zahvaljujem se
+    - hvala
+    - e, puno hvala
+    - tnx
+    - thanks
+    - hvala puno
+    - stvarno hvala
+    - mnogo hvala
+    - zahvaljujem
+    - hvala na pomoći
+    - hvala ti
+    - zahvaljujem se na svemu
+    - puno hvala na svemu
+    - hvala na informaciji
+    - hvala ti puno
+
+
+- intent: informacije_o_studiju
+  examples: |
+    - možete mi nešto više reći o [studiju](studij)?
+    - koji su studijski programi?
+    - koje [smjerove](studij) nudite?
+    - molim vas opišite mi [smjerove](studij) koje se izvode na odjelu [ikt](odjel)
+    - opis [studija](studij)
+    - opis [studijskih](studij) programa
+    - možete opisati [studije](studij)?
+    - više o [studiju](studij)
+    - više o samim [studijama](studij)
+    - kakav je [studij](studij)?
+    - [studiji](studij) koji se izvode
+    - [ikt](odjel) studijski programi
+    - želim više znati o studijskim programima
+    - mogu li dobiti informacije o [studiju](studij)?
+
+- intent: opis_prijediplomski
+  examples: |
+    - možete mi reći nešto više o stručnom [prijediplomski](razina) studiju [informatika](studij)?
+    - molim detaljniji opis [prijediplomski](razina) studija [informatika](studij)
+    - kakav je studij [informatike](studij)?
+    - [prijediplomski](razina) [informatike](studij)
+    - [informatika](studij)
+    - molim više informacija za studij [informatika](studij)
+    - [ikt](odjel) [informatika](studij)
+    - [informatika](studij) na veleučilištu
+    - [prijediplomski](razina) [studij](studij) na veleučilištu
+    - opis [studija](studij) [informatika](studij) na veleučilištu
+
+- intent: opis_diplomski
+  examples: |
+    - možete mi reći nešto više o stručnom [diplomski](razina) studiju [informacijske tehnologije u poslovnim sustavima](studij)?
+    - molim detaljniji opis [diplomski](razina) studija [informacijske tehnologije u poslovnim sustavima](studij)
+    - kakav je studij [informacijskih tehnologija](studij)?
+    - [diplomski](razina) [informacijskih tehnologija](studij)
+    - [informacijske tehnologije u poslovnim sustavima](studij)
+    - molim više informacija za studij [informacijske tehnologije u poslovnim sustavima](studij)
+    - molim više informacija za studij [informacijske tehnologije](studij)
+    - [ikt](odjel) [diplomski](razina) [informacijske tehnologije](studij)
+    - [ikt](odjel) [diplomski](razina) [informacijske tehnologije](studij)
+    - opis studija [informacijskih tehnologija u poslovnim sustavima](studij)
+    - molim vas da mi opišete stručni [diplomski](razina) studij [informacijske tehnologije](studij)
+    - zanima me više informacija o [diplomski](razina) studiju [informacijske tehnologije](studij)?
+    - molim vas recite mi nešto više o [studiju](studij) [informacijske tehnologije](studij)
+    - stručni [diplomski](razina) studij [informacijske tehnologije](studij)
+
+- intent: trajanje_studija
+  examples: |
+    - koliko traje studij [informatike](studij) na veleučilištu?
+    - koliko traje [prijediplomski](razina) studij [informatika](studij)?
+    - trajanje [prijediplomskog](razina) studija [informatika](studij)?
+    - trajanje studija?
+    - koliko traje studij?
+    - koliko traje studij [informacijske tehnologije u poslovnim sustavima](studij)?
+    - koliko traje [diplomski](razina) studij [informacijske tehnologije](studij)?
+    - godine studiranja?
+    - koliko traju studiji na veleučilištu?
+
+- intent: razine_studija
+  examples: |
+    - koliko razina ima studij?
+    - razine studija?
+    - studij razine?
+    - vrste studija?
+    - ima li više vrsta studija?
+    - koliko studij ima razina?
+    - ima li studij više razina?
+    - ima li [prijediplomski](razina) i [diplomski](razina) studij?
+
+- intent: upis_prijediplomski
+  examples: |
+    - kako upisati studij?
+    - kako upisati [informatiku](studij)?
+    - koja je procedura za upis na stručni [prijediplomski](razina) studij [informatike](studij)?
+    - kako upisati [prijediplomski](razina) studij [informatike](studij)?
+    - kako mogu upisati [prijediplomski](razina) studij [informatike](studij)?
+    - što je bitno za upis na [prijediplomski](razina) studij [informatike](studij)?
+    - važno za upis
+    - što trebam napraviti da upišem studij [informatike](studij)?
+    - kako se upisuje studij [informatike](studij) na veleučilištu?
+    - upis [informatika](studij) veleučilište
+
+- intent: upis_diplomski
+  examples: |
+    - kako upisati [diplomski](razina) studij [informacijske tehnologije u poslovnim sustavima](studij)?
+    - koja je procedura za upis na stručni [diplomski](razina) studij [informatike](studij)?
+    - kako upisati [diplomski](razina) studij [informacijske tehnologije](studij)?
+    - kako mogu upisati [diplomski](razina) studij [informacijske tehnologije](studij)?
+    - što je bitno za upis na [diplomski](razina)?
+    - važno za upis na [diplomski](razina)?
+    - što trebam napraviti da upišem [diplomski](razina) studij [informacijske tehnologije](studij)?
+    - kako se upisuje studij [informacijske tehnologije u poslovnim sustavima](studij) na veleučilištu?
+    - upis [informacijske tehnologije](studij)
+
+- intent: redovno_studiranje
+  examples: |
+    - može li se studirati [redovno](status) ?
+    - ima li na odjelu [ikt](odjel) [redovni](status) studij? 
+    - [redovno](status) studiranje
+    - može li se informatika [redovno](status) studirati ?
+    - može li se informacijske tehnologije [redovno](status) studirati ?
+    - postoji li [redovni](status) studij ? 
+    - ima li mogućnosti studirati [redovno](status)? 
+    - [redovni](status) studij informatike 
+    - [redovni](status) studij informacijske tehnologije
+    - [redovno](status) studiranje 
+    - studiranje u [redovnom](status) statusu 
+    - studiranje kao [redovni](status) student
+
+- intent: izvanredno_studiranje
+  examples: |
+    - može li se studirati [izvanredno](status)?
+    - ima li na odjelu [ikt](odjel) [izvanredni](status) studij?
+    - [izvanredno](status) studiranje
+    - može li se informatika [izvanredno](status) studirati?
+    - može li se informacijske tehnologije [izvanredno](status) studirati?
+    - postoji li [izvanredni](status) studij?
+    - ima li mogućnosti studirati [izvanredno](status)?
+    - [izvanredni](status) studij informatike
+    - [izvanredni](status) studij informacijske tehnologije
+    - [izvanredno](status) studiranje
+    - studiranje u [izvanrednom](status) statusu
+    - studiranje kao [izvanredni](status) student
+    - [vandredno](status) studiranje
+    - studiranje u [vandrednom](status) statusu?
+
+- intent: troškovi_studija
+  examples: |
+    - košta li studiranje?
+    - koliko košta studij?
+    - koliki su troškovi studiranja?
+    - košta li [izvanredni](status) studij?
+    - košta li [redovni](status) studij?
+    - mora li se plaćati školarina?
+    - koliko iznosi školarina?
+    - je li studij besplatan?
+    - plaća li se studiranje?
+    - plaćanje studiranja
+    - troškovi studiranja
+    - troškovi studija
+
+- intent: titula_nakon_studija
+  examples: |
+    - koja je titula nakon završenog studija?
+    - titula nakon studija?
+    - koja je titula nakon završetka [prijediplomskog](razina) studija?
+    - koja je titula nakon završetka [diplomskog](razina) studija?
+    - titula nakon završetka [fakulteta](fakultet)
+    - titula [prijediplomski](razina)
+    - titula [diplomski](razina)
+    - zvanje nakon završenog studija
+    - zvanje nakon [fakulteta](fakultet)
+    - koja je službena titula nakon završetka studiranja?
+    - koje akademsko zvanje dobivam ?
+
+- intent: izazovi_studiranja_ikt
+  examples: |
+    - možete navesti neke izazove studiranja na [ikt](odjel)odjelu?
+    - koji su izazovi studiranja?
+    - na koje izazove mogu računati prilikom studiranja?
+    - ima li [fakultet](fakultet) specifične izazove?
+    - koji su najčešći izazovi prilikom studiranja?
+    - neki izazovi prilikom studiranja
+    - izazovi tijekom studija
+    - koliko je izazovno studirati?
+    - je li studiranje na [ikt](odjel) zahtjevno?
+    - koje su najčešće teškoće u studiranju?
+    - koji su problemi s kojima se studenti susreću?
+    - je li studij zahtjevan?
+
+- intent: prednosti_studiranja_ikt
+  examples: |
+    - koje su prednosti studiranja na [ikt](odjel) odjelu?
+    - neki od benefita studiranja na veleučilištu?
+    - dobre strane studiranja
+    - prednosti studiranja na veleučilištu?
+    - prednosti studiranja na [ikt](odjel) odjelu
+    - prednosti studiranja [informatike](studij)
+    - benefiti studiranja
+    - dobrobiti studiranja
+    - lijepe strane studiranja
+    - je li dobro studirati na veleučilištu?
+    - zašto bih studirao na [ikt](odjel) odjelu?
+    - što dobivam studiranjem na ovom studiju?
+
+- intent: ishodi_ucenja_prijediplomski
+  examples: |
+    - koji su ishodi učenja na [prijediplomskom](razina) studiju [informatike](studij)?
+    - što ću sve naučiti na studiju [informatike](studij)?
+    - koja gradiva pokriva stručni [prijediplomski](razina) studij [informatike](studij)?
+    - koje vještine se stječu na studiju [informatike](studij)?
+    - kako je koncipiran [prijediplomski](razina) studij [informatike](studij)?
+    - navedite ishode učenja za [prijediplomski](razina) studij [informatike](studij)
+    - recite mi neke od ishoda učenja na studiju [informatike](studij)
+    - neke od tema koje pokriva studij [informatike](studij)
+    - koje teme pokriva [prijediplomska](razina) razina?
+    - što se uči na [prijediplomskom](razina) studiju?
+
+- intent: ishodi_ucenja_diplomski
+  examples: |
+    - koji su ishodi učenja na [diplomskom](razina) studiju [informacijskih tehnologija u poslovnim sustavima](studij)?
+    - što ću sve naučiti na studiju [informacijskih tehnologija](studij)?
+    - koja gradiva pokriva stručni [diplomski](razina) studij [informacijske tehnologije](studij)?
+    - koje vještine se stječu na studiju [informacijskih tehnologija u poslovnim sustavima](studij)?
+    - kako je koncipiran [diplomski](razina) studij [informacijske tehnologije](studij)?
+    - navedite ishode učenja za [diplomski](razina) studij [informacijske tehnologije](studij)
+    - recite mi neke od ishoda učenja na studiju [informacijskih tehnologija u poslovnim sustavima](studij)
+    - neke od tema koje pokriva studij [informacijske tehnologije](studij)
+    - koje teme pokriva [diplomska](razina) razina?
+    - što se uči na [diplomskom](razina) studiju?
+    - što se uči na [diplomskoj](razina) razini?
+
+- intent: mogućnosti_nakon_završetka_studija
+  examples: |
+    - što nakon studija?
+    - koje su mogućnosti nakon završetka  [fakulteta](fakultet)?
+    - što mogu raditi kada završim studij?
+    - koje su prilike nakon faksa?
+    - koje su prilike nakon završetka studija?
+    - mogu li raditi nakon [fakulteta](fakultet)
+    - gdje se mogu zaposliti?
+    - kakve su karijerne mogućnosti nakon studija?
+    - koje poslove mogu raditi nakon diplome?
+    - gdje mogu tražiti posao nakon završenog studija?
+    - što rade studenti nakon što završe studij?
+    - koje struke su dostupne nakon završetka [fakulteta](fakultet)
+
+- intent: popis_kolegija_prijediplomski
+  examples: |
+    - navedite mi popis [kolegija](kolegij) koji se izvode na [prijediplomskom](razina) studiju [informatike](studij)
+    - koji su [kolegiji](kolegij) koji se izvode na [informatici](studij)?
+    - popis [kolegija](kolegij) na [prijediplomskoj](razina) razini
+    - popis [predmeta](kolegij) koji se izvode na [informatici](studij)
+    - možete mi reći koji su [kolegiji](kolegij) na [prijediplomskom](razina) studiju [informatika](studij)?
+    - koji je popis [predmeta](kolegij) na studiju [informatike](studij)?
+    - [predmeti](kolegij) [informatika](studij)
+    - koji su [kolegiji](kolegij) koji se izvode na [informatici](studij)?
+    - [prijediplomski](razina) [kolegij](kolegij)
+
+- intent: popis_kolegija_diplomski
+  examples: |
+    - navedite mi popis [kolegija](kolegij) koji se izvode na [diplomskom](razina) studiju [informacijske tehnologije u poslovnim sustavima](studij)
+    - koji su [kolegiji](kolegij) koji se izvode na [informacijke tehnologije](studij)?
+    - popis [kolegija](kolegij) na [diplomskom](razina) razini
+    - popis [predmeta](kolegij) koji se izvode na [informacijke tehnologije](studij)
+    - možete mi reći koji su [kolegiji](kolegij) na [diplomskom](razina) studiju [informacijke tehnologije u poslovnim susutavima](studij)?
+    - koji je popis [predmeta](kolegij) na studiju [informacijske tehnologije](studij)?
+    - [predmeti](kolegij) [informacijske tehnologije](studij)
+    - koji su [kolegiji](kolegij) koji se izvode na [informaicjske tehnologije u poslovnim sustavima](studij)?
+    - [diplomski](razina) [kolegij](kolegij)
+
+
+- intent: opis_kolegija
+  examples: |
+    - možete mi opisati [proceduralno i modularno programiranje](kolegij)?
+    - kakva je [matematika za informatičare](kolegij)?
+    - što se radi na [razvoju desktop aplikacija](kolegij)?
+    - [uvod u računalne mreže](kolegij)?
+    - može li detaljniji opis za [engleski jezik za informatičare](kolegij)?
+    - dajte mi više informacija za [sustavi baza podatka](kolegij)?
+    - recite mi nešto više o [objektno orijentirano programiranje](kolegij)
+    - molim više informacija za [razvoj interaktivnih web aplikacija](kolegij)
+    - što je [osnove umjetne inteligencije](kolegij)?
+    - više o [uvod u iot sustave](kolegij)
+    - želim znati više o [operacijski sustavi](kolegij)
+    - opišite mi kolegij [poslovna komunikacija i suradnja](kolegij).
+    - što ću učiti na [razvoj poslovne ideje](kolegij)?
+    - kakva je [računalna grafika](kolegij)?
+    - informacije o [sigurnost informacijskih i komunikacijskih sustava](kolegij).
+    - možete li mi reći nešto o [upravljanje informatičkim projektima](kolegij)?
+    - zanima me [sustavi baza podataka](kolegij).
+    - što se pokriva na [razvoj mobilnih aplikacija](kolegij)?
+    - kakav je sadržaj kolegija [digitalni marketing](kolegij)?
+    - detaljnije o [alati razvoja informacijskih sustava](kolegij).
+    - recite mi nešto o kolegiju [računalno upravljanje složenim sustavima](kolegij).
+    - objasnite [sigurnost web aplikacija](kolegij).
+    - što je cilj kolegija [ux/ui dizajn](kolegij)?
+    - kakav je [internet tehnologije i e-poslovanje](kolegij)?
+    - kakav je kolegij [razvoj interaktivnih web aplikacija](kolegij)?
+    - želim znati više o [modeliranje podataka](kolegij)
+    - što se uči na [proceduralno i modularno programiranje](kolegij)?
+    - po čemu je poseban [engleski jezik za informatičare](kolegij)?
+    - da li mi možeš reći nešto više o kolegiju [sustavi baza podataka](kolegij)?
+    - kakav je kolegij [multimedijski sustavi](kolegij)?
+    - reci mi nešto o [sustavi za upravljanje sadržajem i dokumentima](kolegij)
+    - o čemu se uči na [razvoj aplikacijskog programskog sučelja](kolegij)?
+    - koji je fokus kolegija [poslovni procesi u organizacijama](kolegij)?
+    - molim te, opiši [tjelesna i zdravstvena kultura 1](kolegij).
+    - što obuhvaća [specifikacija korisničkih zahtjeva i modeliranje procesa](kolegij)?
+    - što se radi na [razvoj poslovne ideje](kolegij)?
+    - kakav je [engleski jezik za projektante](kolegij)?
+    - što je bitno znati o [osnove proceduralnog programiranja](kolegij)?
+    - kakav je pristup na [poduzetništvo za informatičare](kolegij)?
+    - koje su glavne teme na [projektni praktikum](kolegij)?
+    - reci mi nešto više o [upravljanje kvalitetom informacijskih sustava](kolegij).
+    - kakav je kolegij [programsko inženjerstvo (prijediplomski)](kolegij)?
+    - što se radi na [modeliranje i simulacije](kolegij)?
+    - možeš li mi dati pregled [komunikacijske tehnologije](kolegij)?
+    - kakav je kolegij [izgradnja objektno orijentiranih aplikacija](kolegij)?
+    - što se uči na [sučelje poslovnih i procesnih sustava](kolegij)?
+    - koje su ključne teme na [sigurnost web aplikacija](kolegij)?
+    - kakav je kolegij [automatizacija uredskog poslovanja](kolegij)?
+    - što se uči na [ergonomija i uporaba računala](kolegij)?
+    - možeš li mi opisati kolegij [razvoj mobilnih aplikacija](kolegij)?
+    - reci mi ukratko o [razvoj interaktivnih web aplikacija](kolegij)?
+    - kakav je kolegij [3d modeliranje](kolegij)?
+    - koji je sadržaj kolegija [alati razvoja informacijskih sustava](kolegij)?
+    - što je važno za [računalno upravljanje složenim sustavima](kolegij)?
+    - koje su glavne teme [metodika stručnog i istraživačkog rada](kolegij)?
+    - reci mi nešto o kolegiju [informacijski sustav za potporu odlučivanju](kolegij).
+    - kakav je kolegij [internet tehnologije i e-poslovanje](kolegij)?
+    - kakva su iskustva s kolegijem [tjelesna i zdravstvena kultura 2](kolegij)?
+    - što se radi na [napredne teme iz operacijskih sustava](kolegij)?
+    - kakav je kolegij [sustavi za vođenje proizvodnih procesa](kolegij)?
+    - o čemu govori kolegij [distribuirani sustavi](kolegij)?
+    - kakav je kolegij [planiranje informacijskih sustava](kolegij)?
+    - kakav je kolegij [diplomski rad](kolegij)?
+    - opiši mi ukratko [poslovni procesi u organizacijama](kolegij).
+    - kakav je kolegij [uvod u baze podataka](kolegij)?
+    - što ću raditi na [računalna grafika](kolegij)?
+    - možeš li mi objasniti [uvod u računalne mreže](kolegij)?
+    - što je to [ugradbene računalne mreže](kolegij)?
+    - kakav je [programsko inženjerstvo (diplomski)](kolegij)?
+    - reci mi više o [sigurnost informacijskih i komunikacijskih sustava](kolegij)?
+    - kakav je kolegij [izgradnja multimedijskih sustava](kolegij)?
+    - koji je sadržaj kolegija [semestralna stručna praksa](kolegij)?
+    - možeš li mi nešto reći o kolegiju [uvod u iot sustave](kolegij)?
+    - kakav je kolegij [objektno orijentirano programiranje](kolegij)?
+    - molim te, reci mi nešto o [kontrola i revizija informacijskih sustava](kolegij).
+    - kakav je kolegij [modularno programsko inženjerstvo](kolegij)?
+    - reci mi nešto o kolegiju [specijalistička praksa](kolegij).
+    - što se radi na [napredne teme iz sigurnosti informacijskih i komunikacijskih sustava](kolegij)?
+    - reci mi nešto više o [sistemska infrastruktura za razvoj softvera](kolegij).
+    - što se radi na [alati razvoja informacijskih sustava](kolegij)?
+    - kakav je kolegij [sustavi za upravljanje sadržajem i dokumentima](kolegij)?
+    - reci mi nešto o kolegiju poslovna analitika i izvješćivanje?
+    - što ću naučiti o kolegiju tjelesna i zdravstvena kultura 1?
+    - kakav je kolegij izgradnja multimedijskih sustava?
+    - da li mi možeš opisati kolegij metodika stručnog i istraživačkog rada?
+    - mogu li saznati nešto o kolegiju upravljanje informatičkim projektima?
+    - što je sadržaj kolegija osnove proceduralnog programiranja?
+    - što obuhvaća specifikacija korisničkih zahtjeva i modeliranje procesa?
+    - kakav je pristup kolegiju uvod u računalne mreže?
+    - kako izgleda kolegij internet tehnologije i e-poslovanje?
+    - što se konkretno radi na kolegiju razvoj interaktivnih web aplikacija?
+    - što je to sustavi baza podataka?
+    - kakav je kolegij programsko inženjerstvo (diplomski)?
+    - reci mi ukratko o kolegiju ergonomija i uporaba računala.
+    - možeš li mi dati više detalja o kolegiju kontrola i revizija informacijskih sustava?
+    - što se uči na kolegiju računalna grafika?
+    - kakva su iskustva s kolegijem tjelesna i zdravstvena kultura 2?
+    - opiši mi glavne teme kolegija uvod u iot sustave.
+    - što se očekuje od kolegija završni rad?
+    - kakav je sadržaj kolegija specijalistička praksa?
+    - što se radi na kolegiju poslovni procesi u organizacijama?
+    - kakav je kolegij modeliranje podataka?
+    - kako izgleda kolegij distribuirani sustavi?
+    - kakav je kolegij alati razvoja informacijskih sustava?
+    - možeš li mi reći nešto više o kolegiju upravljanje kvalitetom informacijskih sustava?
+    - reci mi ukratko o kolegiju izgradnja objektno orijentiranih aplikacija.
+    - što je cilj kolegija računalno upravljanje složenim sustavima?
+    - koje su ključne teme kolegija sigurnost web aplikacija?
+    - opiši mi ukratko kolegij automatizacija uredskog poslovanja.
+    - što se radi na kolegiju planiranje informacijskih sustava?
+    - kakav je pristup kolegiju uvod u baze podataka?
+    - što je to ugradbene računalne mreže?
+    - reci mi više o kolegiju sigurnost informacijskih i komunikacijskih sustava.
+    - možeš li mi reći nešto o kolegiju modularno programsko inženjerstvo?
+    - kakva je matematika za informatičare?
+    - što se radi na razvoju desktop aplikacija?
+    - kakva je sustavi baza podataka?
+
+- intent: nositelji_asistenti_kolegija
+  examples: |
+    - tko predaje [proceduralno i modularno programiranje](kolegij)?
+    - tko je [nositelj](nastavnik) kolegija [osnove umjetne inteligencije](kolegij)?
+    - tko je [nastavnik](nastavnik) [sigurnost informacijskih i komunikacijskih sustava](kolegij)?
+    - možete mi reći tko je [nositelj](nastavnik) kolegija [multimedijski sustavi](kolegij)?
+    - možete mi reći tko je [asistent](nastavnik) kolegija [multimedijski sustavi](kolegij)?
+    - tko drži kolegij [uvod u baze podatka](kolegij)?
+    - tko vodi [razvoj aplikacijskog programskog sučelja](kolegij)?
+    - tko na [prijediplomskom](razina) studiju [informatike](studij) je [nositelj](nastavnik) kolegija [razvoj interaktivnih web aplikacija](kolegij)?
+    - tko je [asistent](nastavnik) na [diplomskom](razina) studiju [informacijske tehnologije](studij) za kolegij [izgradnja objektno orijentalnih aplikacija](kolegij)?
+    - tko predaje [modeliranje i simulacije](kolegij) na [diplomskom](razina) studiju [informacijske tehnologije u poslovnim sustavima](studij)?
+    - tko je odgovoran za kolegij [matematika za informatičare](kolegij)?
+    - koja je [osoba](nastavnik) dužna za kolegij [uvod u računalne mreže](kolegij)?
+    - [osoba](nastavnik) koja predaje [programsko inženjerstvo (prijediplomski)](kolegij)?
+
+- intent: polaganje_kolegija
+  examples: |
+    - na koji način se polaže određeni [kolegij](kolegij)?
+    - kako se polažu [predmeti](kolegij)?
+    - koja je uobičajena praksa za polaganje [kolegija](kolegij)?
+    - polaganje [kolegija](kolegij)
+    - polaganje [predmeta](kolegij)
+    - polaganje
+    - kako položiti određeni [kolegij](kolegij)?
+    - kako mogu položiti [uvod u baze podataka](kolegij)?
+    - kako položiti [uvod u računalne mreže](kolegij)?
+    - kako se polažu [predmeti](kolegij)?
+    - kako položiti
+
+- intent: prijava_ispita
+  examples: |
+    - kako se prijavljuje [ispit](ispit)?
+    - kako prijaviti ispit(ispit)?
+    - prijava [ispit](ispit)
+    - prijava [testa](ispit)
+    - prijava završnog [ispit](ispit)
+    - moram prijaviti [test](ispit)
+    - kako da prijavim završni [ispit](ispit)
+    - na koji se način prijavljuju [ispit] iz pojedinih [kolegij](kolegij)?
+    - iz [uvoda u baze podatka](kolegij) moram prijaviti završni [ispit](ispit)
+    - kako ću iz [objektno orjedntalno programiranje](kolegij) prijaviti [ispit](ispit)?
+    - [ispit](ispit)
+    - [test](ispit)
+    - završni [ispit](ispit)
+
+- intent: najzahtjevniji_kolegiji
+  examples: |
+    - možete mi reći koji su najteži [predmeti](kolegij)?
+    - za koje se [kolegije](kolegij) treba najviše pripremati?
+    - Koje [predmete](kolegij) treba najviše učiti?
+    - koji je [kolegij](kolegij) najzahtjevniji u [prvom](semestar) semestru?
+    - najzahtjevniji [kolegiji](kolegij) na [prvoj](godina) godini?
+    - koji su najteži [kolegiji](kolegij) na [drugoj](godina) godini?
+    - što je najzahtjevnije na [trećoj](godina) godini?
+    - koji [kolegiji](kolegij) imaju najviše gradiva?
+    - najteži [kolegij](kolegij)?
+    - najteže na [drugoj](godina) studiranja?
+    - koji [predmeti](kolegij) predstavljju najveći izazov?
+    - što je najteže na [prvoj](godina) studiranja?
+    - od kojih će me [predmeta](kolegij) najviše boliti glava?
+    - najzahtjevniji [predmet](kolegij) u [zimskom](semestru) na [prvoj](godina)?
+    - najteži [kolegij] na [prijediplomskoj](razina) u [ljetnom](semestar) semestru na [drugoj](godina) godini?
+
+- intent: izborni_kolegiji
+  examples: |
+    - koji su [izborni](kolegij) kolegiji?
+    - izborni?
+    - [izborni](kolegij)?
+    - šta sa [izbornim](kolegij) kolegijima?
+    - moram li upisati [izborni](kolegij) kolegij?
+    - jesu li [izborni](kolegij) kolegiji teži nego obavezni, ili?
+    - na koji način se polažu [izborni](kolegij) kolegij?
+    - molim više informacija o [izbornim](kolegij) kolegijima
+    - možeš li mi reći nešto o [izbornim](kolegij) kolegijima?
+    - koliko [izbornih](kolegij) kolegija moram upisati?
+    - koji su dostupni [izborni](kolegij) predmeti?
+    - može li mi netko objasniti pravila za [izborne](kolegij) kolegije?
+   
+
+- intent: semestralna_stručna_praksa
+  examples: |
+    - možete li mi dati više informacija o [semestralnoj stručnoj praksi](kolegij)?
+    - što je [semestralna stručna praksa](kolegij)?
+    - kako se polaže [semestralna stručna praksa](kolegij)?
+    - bitne informacije o [semestralnoj stručnoj praksi](kolegij)?
+    - važno za [praksu](kolegij)?
+    - [praksa]?
+    - [vanjska praksa]?
+    - kako se odvija [praksa](kolegij)?
+    - što trebam znati o [praksi](kolegij)?
+    - gdje mogu obaviti [stručnu praksu](kolegij)?
+    - koliko traje [praksa](kolegij)?
+    - je li [praksa](kolegij) obavezna?
+
+- intent: izbor_mentora
+  examples: |
+    - na koji način biram [mentora](nastavnik) za svoj [završni rad](kolegij)?
+    - na koji način biram [mentora](nastavnik) za svoj [diplomski rad](kolegij)?
+    - kako se bira [mentor](nastavnik)?
+    - kako da izabrem [mentora](nastavnik)?
+    - koje su preporuke za izbor [mentora](nastavnik)?
+    - kako da najbolje odaberem tko će mi biti [mentor](nastavnik) na [završnom radu](kolegij)?
+    - gdje se izabire [mentor](nastavnik) [završnog rada](kolegij)?
+    - [mentor](nastavnik) na [prijediplomskom](razina) studiju [informatike](studij)?
+    - kako pronaći [mentora](nastavnik) za [diplomski rad](kolegij)?
+    - preporuka za [mentora](nastavnik) na [diplomskom](razina)?
+    - mogu li sam izabrati [mentora](nastavnik)?
+    - tko dodjeljuje [mentora](nastavnik)?
+    - trebam li kontaktirati [mentora](nastavnik) samostalno?
+
+- intent: prijava_završnog_diplomskog
+  examples: |
+    - na koji način se prijavljuje [završni rad](kolegij)?
+    - na koji način se prijavljuje [diplomski rad](kolegij)?
+    - kako se prijavljuje [završni rad](kolegij)?
+    - kako prijaviti [diplomski rad](kolegij)?
+    - gdje prijavljujem [završni rad](kolegij)?
+    - kome se mogu obratiti za prijavu [diplomskog rada](kolegij)?
+    - trebam li prijaviti [završni rad](kolegij)?
+    - trebam li prijaviti [diplomski rad](kolegij)?
+    - kada se prijavljuje [završni rad](kolegij)?
+    - postoji li rok za prijavu [diplomskog rada](kolegij)?
+    - kome se šalje prijava za [završni rad](kolegij)?
+    - kako izgleda proces prijave [diplomskog rada](kolegij)?
+
+- intent: pisanje_završnog_diplomskog
+  examples: |
+    - kako se piše [završni rad](kolegij)?
+    - kako započeti pisanje [diplomskog rada](kolegij)?
+    - koji su koraci u pisanju [završnog rada](kolegij)?
+    - trebam pomoć oko pisanja [diplomskog rada](kolegij)
+    - što sve treba sadržavati [završni rad](kolegij)?
+    - koliko stranica mora imati [diplomski rad](kolegij)?
+    - postoji li predložak za pisanje [završnog rada](kolegij)?
+    - smjernice za pisanje [diplomskog rada](kolegij)?
+    - koji su formalni zahtjevi za [završni rad](kolegij)?
+    - kako strukturirati [završni rad](kolegij)?
+    - je li dozvoljeno pisati [diplomski rad](kolegij) u parovima?
+    - koje izvore mogu koristiti za [završni rad](kolegij)?
+    - koliko vremena imam za pisanje [diplomskog rada](kolegij)?
+    - smijem li pisati [završni rad](kolegij) na engleskom jeziku?
+
+- intent: obrana_završnog_diplomskog
+  examples: |
+    - kako izgleda obrana [završnog rada](kolegij)?
+    - kako se pripremiti za obranu [diplomskog rada](kolegij)?
+    - što me čeka na obrani [završnog rada](kolegij)?
+    - imam li prezentaciju na obrani [diplomskog rada](kolegij)?
+    - koliko traje obrana [završnog rada](kolegij)?
+    - što moram ponijeti na obranu [završnog rada](kolegij)?
+    - tko sve prisustvuje na obrani [diplomskog rada](kolegij)?
+    - koliko članova komisije je na obrani [diplomskog rada](kolegij)?
+    - koji su savjeti za uspješnu obranu [završnog rada](kolegij)?
+    - što ako dobijem pitanje koje ne znam na obrani [diplomskog rada](kolegij)?
+    - je li obrana [završnog rada](kolegij) javna?
+
+- intent: dekan
+  examples: |
+    - tko je dekan veleučilišta u Rijeci?
+    - dekan veleučilišta?
+    - dekan
+    - glavna osoba na  [fakultetu](fakultet)
+    - ravnatelj?
+    - upravitelj [fakulteta](fakultet)
+    - koji su podaci dekana?
+    - molim kontakt informacije o dekanu veleučilišta?
+    - mogu li dobiti kontakt dekana veleučilišta u Rijeci?
+    - dekan na našem  [fakultetu](fakultet)
+    - voditelj  [fakulteta](fakultet)
+    - tko vodi  [fakultet](fakultet)
+    - tko je upravitelj veleučilišta?
+    - kontakt dekan
+
+- intent: prodekani_svi
+  examples: |
+    - tko su prodekani veleučilišta u rijeci?
+    - mogu li dobiti informacije o prodekanima?
+    - kontakt informacije za prodekane?
+    - koga mogu kontaktirati u dekanatu?
+    - informacije o dekanatu?
+    - prodekani veleučilišta?
+    - prodekani?
+    - molim info o prodekanima?
+    - prodekani na veleučilištu?
+    - molim popis svih prodekana
+    - molim informacije za prodekane?
+    - svi prodekani na fakultetu?
+    
+
+- intent: prodekan_nastava
+  examples: |
+    - tko je prodekan za [nastavu i studentska pitanja](prodekan_funkcija)?
+    - prodekan za [nastavu i studentska pitanja](prodekan_funkcija)
+    - prodekan [nastava](prodekan_funkcija) ?
+    - trebam pomoć prodekana za [nastavu](prodekan_funkcija)
+    - mogu li dobiti informacije o prodekanu za [nastavu i studentska pitanja](prodekan_funkcija)?
+    - molim te informaciju za prodekana za [nastavu i studentska pitanja](prodekan_funkcija)?
+    - kome se obratiti za [studentska pitanja](prodekan_funkcija)?
+    - postoji li prodekan za [nastavu](prodekan_funkcija)?
+
+- intent: prodekan_međunarodna
+  examples: |
+    - tko je prodekan za [međunarodnu suradnju](prodekan_funkcija)?
+    - prodekan za [međunarodnu suradnju](prodekan_funkcija)
+    - prodekan [međunarodna](prodekan_funkcija) ?
+    - trebam pomoć prodekana za [međunarodnu suradnju](prodekan_funkcija)
+    - mogu li dobiti informacije o prodekanu za [međunarodnu suradnju](prodekan_funkcija)?
+    - molim te informaciju za prodekana za [međunarodnu](prodekan_funkcija)?
+    - postoji li prodekan za [međunarodnu suradnju](prodekan_funkcija)?
+
+- intent: prodekan_poslovni
+  examples: |
+    - prodekan za [poslovne odnose](prodekan_funkcija)
+    - prodekan [poslovni odnosi](prodekan_funkcija) ?
+    - trebam pomoć prodekana za [poslovne odnose](prodekan_funkcija)
+    - mogu li dobiti informacije o prodekanu za [poslovne odnose](prodekan_funkcija)?
+    - molim te informaciju za prodekana za [poslovne odnose](prodekan_funkcija)?
+    - postoji li prodekan za [poslovne odnose](prodekan_funkcija)?
+
+
+- intent: pročelnik_ikt_odjela
+  examples: |
+    - tko je [pročelnik](nastavnik) [ikt](odjel) odjela?
+    - pročelnik [ikt](odjel) odjela?
+    - tko je [pročelnik](nastavnik)?
+    - tko je [pročelnik](nastavnik) odjela?
+    - koji su kontakt podaci [pročelnika](nastavnik)?
+    - tko je pročelnik [studija](studij)?
+    - pročelnik [odjela za informacijske i komunikacijske tehnologije](odjel)?
+    - tko je pročelnik na [studiju](studij) [informatike](studij)?
+    - tko je pročelnik za [studij](studij) [informacijske i komunikacijske tehnologije](studij)?
+    - molim kontakt podatke od [pročelnika](nastavnik)?
+
+- intent: kontakt_nastavnici
+  examples: |
+    - treba mi kontakt nastavnice [Ida Panev](nastavnik)
+    - trebam nešto priupitati profesora [Ivana Šimca](nastavnik), može kontakt?
+    - koji je broj mobitela od [dr.sc.socio Alena Jakupović](nastavnik)?
+    - treba mi email adresa od [Vlatka Davidović](nastavnik)
+    - možete li mi dati kontakt podatke za [Suzanu Škaricu Stupičić](nastavnik)?
+    - želim poslati upit [doc. Sabrini Šuman](nastavnik), imate li email?
+    - kako mogu stupiti u kontakt s [Matea Pešut](nastavnik)?
+    - može li mi netko dati broj telefona od [Brune Polonija](nastavnik)?
+    - treba mi službeni email od [Tatjane Šepić](nastavnik)
+    - imam pitanje za [dr. sc. human. Sanju Grakalić Plenković](nastavnik), možete li mi dati kontakt?
+    - gdje mogu pronaći kontakt informacije za [Kristinu Dundović](nastavnik)?
+    - trebam email od asistenta [Brune Polonija]
+    - mogu dobiti kontakt informacije od [dr.sc.socio Marin Kaluža](nastavnik)?
+    - kada su termini konzultacija za [dr. sc. socio. Ida Panev](nastavnik)?
+    - možete li mi reći kad [Ivan Šimac](nastavnik) ima konzultacije?
+    - želim zakazati konzultacije s [doc. Sabrinom Šuman](nastavnik), kada je slobodan termin?
+    - kad su konzultacije kod [Marina Kaluže](nastavnik)?
+    - imam pitanje, kada mogu doći na konzultacije kod asistenta [Brune Polonija](nastavnik)?
+    - molim info o terminima konzultacija za [dr. sc. human. Tatjanu Šepić](nastavnik)
+    - gdje mogu saznati termine konzultacija za [Alena Jakupovića](nastavnik)?
+    - koji su rasporedi konzultacija za [Matea Pešut](nastavnik)?
+    - kada [dr. sc. socio. Bernard Vukelić](nastavnik) održava konzultacije?
+    - mogu dobiti indfromaciju kada [mr.sc. Katarina Volarić Nižić](nastavnik) održava konzultacije?
+
+- intent: mentoriranje_studenta
+  examples: |
+    - možete mi objasniti pojam mentoriranja [studenta](student)?
+    - mentoriranje [studenta](student)?
+    - što je mentoriranje?
+    - koja je svrha mentoriranja?
+    - više o mentoriranju [studenta](student)?
+    - je li mentoriranje [studenta](student) isto kao i mentor na [završnom radu](kolegij)?
+    - kako funkcionira mentoriranje [studenata](student)?
+    - koliko traje mentoriranje [studenata](student)?
+    - koje su obaveze [mentora](nastavnik) prema [studenatu](student)?
+    - kako se dodjeljuje [mentor](nastavnik) [studenatu](student)?
+    - može li mentoriranje pomoći u završetku studija?
+
+- intent: sto_je_iksica
+  examples: |
+    - što je [iksica](iksica)?
+    - možete li mi reći što je [iksica](iksica)?
+    - objasnite pojam [iksica](iksica)
+    - kakva je to [iksica](iksica)?
+    - [iksica](iksica) – što znači?
+    - ne znam što je [iksica](iksica)
+    - prvi put čujem za [iksicu](iksica), što je to?
+    - [iksica](iksica) 
+    - [iksica](iksica) inf
+
+- intent: izrada_iksice
+  examples: |
+    - gdje mogu izraditi [iksicu](iksica)?
+    - kako dobiti [iksicu](iksica)?
+    - kome se obratiti za [iksicu](iksica)?
+    - gdje se izrađuje [iksica](iksica)?
+    - postupak izrade [iksice](iksica)?
+    - tko izrađuje [iksicu](iksica)?
+    - kako mogu do svoje [iksice](iksica)?
+    - kako se izrađuje [iksica](iksica)?
+    - izrada [iksice](iksica)
+    - molim više informacija o izradi [iksice](iksica)
+
+- intent: svrha_iksice
+  examples: |
+    - čemu služi [iksica](iksica)?
+    - što mogu s [iksicom](iksica) raditi?
+    - gdje mogu koristiti [iksicu](iksica)?
+    - prednosti [iksice](iksica)?
+    - koristi [iksice](iksica)?
+    - ima li [iksica](iksica) neke pogodnosti?
+    - što sve mogu s [iksicom](iksica)?
+    - više informacija za korištenje [iksice](iksica)
+    - korištenje [iksice](iksica)
+
+- intent: nestanak_iksice
+  examples: |
+    - izgubio sam [iksicu](iksica), što da radim?
+    - nestala mi je [iksica](iksica)
+    - mogu li prijaviti gubitak [iksice](iksica)?
+    - kome se javiti ako sam izgubio [iksicu](iksica)?
+    - izgubila sam [iksicu](iksica), mogu li dobiti novu?
+    - kako prijaviti izgubljenu [iksicu](iksica)?
+    - što ako izgubim [iksicu](iksica)?
+    - izgubljena [iksica](iksica)?
+
+- intent: jmbag
+  examples: |
+    - što je [jmbag](jmbag)?
+    - [jmbag](jmbag)?
+    - ne znam što je [jmbag](jmbag), može info?
+    - može pomoć oko pojma [jmbag](jmbag)?
+    - što znači [jmbag](jmbag)?
+    - objasni mi [jmbag](jmbag)
+    - što predstavlja [jmbag](jmbag) broj?
+    - gdje mogu pronaći [jmbag](jmbag)?
+    - gdje piše moj [jmbag](jmbag)?
+    - gdje se nalazi [jmbag](jmbag)?
+    - kako izgleda [jmbag](jmbag)?
+    - je li [jmbag](jmbag) isti kao OIB?
+    - što znači kratica [jmbag](jmbag)?
+    - koja je svrha [jmbag](jmbag) broja?
+
+- intent: kolegij_opis
+  examples: |
+    - što je [kolegij](kolegij)?
+    - možeš mi objasniti pojam [kolegij](kolegij)?
+    - ne znam što znači [kolegij](kolegij), može pojašnjenje?
+    - značenje riječi [kolegij](kolegij)?
+    - što znači riječ [kolegij](kolegij)?
+    - objasni mi što je to [kolegij](kolegij)
+    - što podrazumijeva [kolegij](kolegij)?
+    - možeš li mi reći što predstavlja [kolegij](kolegij)?
+    - [kolegij](kolegij), što to znači?
+    - pojam [kolegij](kolegij)?
+    - znaš li što je [kolegij](kolegij)?
+    - [kolegij](kolegij)?
+
+- intent: ects_značenje
+  examples: |
+    - što je [ects](ects)?
+    - značenje riječi [ects](ects)
+    - [ects](ects)?
+    - objasni mi što je to [[ects](ects)?
+    - pojam [ects](ects)?
+    - znaš li što je [ects](ects)?
+    - ne znam što znači [ects](ects), može info?
+
+- intent: ects_ostvarivanje
+  examples: |
+    - kako se ostvaruje [ects](ects)?
+    - kako dobiti [ects](ects) bodove?
+    - kako zaraditi [ects](ects)?
+    - na koji način skupljam [ects](ects)?
+    - kako skupiti [ects](ects) bodove?
+    - koje aktivnosti donose [ects](ects)?
+    - kako se računaju [ects](ects)?
+    - koliko [ects](ects) dobijem za kolegij?
+    - mogu li izgubiti [ects](ects)?
+    - gdje mogu pratiti ostvarene [ects](ects) bodove?
+
+- intent: semestar_info
+  examples: |
+    - što je [semestar](semestar)?
+    - značenje [semestra](semestar)
+    - što znači [semestar](semestar)?
+    - koliko traje jedan [semestar](semestar)?
+    - koliko tjedana traje [semestar](semestar)?
+    - koliko [semestara](semestar) ima stručni [prijediplomski](razina) studij [informatika](studij)?
+    - je li [zimski](semestar) jednako dug kao i [ljetni](semestar)?
+    - koliko ukupno ima [semestara](semestar) na [diplomskom](razina) studiju?
+    - koliko traje [zimski](semestar) semestar?
+    - koliko traje [ljetni](semestar) semestar?
+    - koliko semestara ima jedna akademska godina?
+    - postoji li razlika između zimskog i ljetnog [semestra](semestar)?
+    - što znači pojam [zimski](semestar) semestar?
+    - kako je organiziran [semestar](semestar)?
+    - [semestar](semestar)?
+    -  [semestar](semestar)info?
+    - molim vas pružite mi bitne informacije vezane za [semestar](semestar)
+
+- intent: studomat
+  examples: |
+    - što je [studomat](platforma)?
+    - možete li objasniti pojam [studomat](platforma)?
+    - čemu služi [studomat](platforma)?
+    - koja je svrha [studomata](platforma)?
+    - [studomat](platforma)?
+    - ne znam što je [studomat](platforma)
+    - možete li mi reći više o [studomatu](platforma)?
+    - za što se koristi [studomat](platforma)?
+    - gdje mogu pronaći [studomat](platforma)?
+    - kakva je to aplikacija [studomat](platforma)?
+
+- intent: studomat_prijava_ispita
+  examples: |
+    - kako se prijavljuje [ispit](ispit) putem [studomata](platforma)?
+    - mogu li prijaviti [ispit](ispit) preko [studomata](platforma)?
+    - gdje prijaviti [ispit](ispit)?
+    - kako prijaviti [ispit](ispit)?
+    - mogu li prijaviti [ispit](ispit) online?
+    - do kada se mogu prijaviti na [ispit](ispit)?
+    - kada se otvara prijava [ispita](ispit)?
+    - kada se zatvara prijava [ispita](ispit)
+    - ne mogu prijaviti [ispit](ispit) u [studomatu](platforma)
+    - kako znam da mi je [ispit](ispit) prijavljen?
+
+- intent: studomat_odjava_ispita
+  examples: |
+    - kako odjaviti [ispit](ispit)?
+    - vremenski rok za odjavu [ispita](ispit)
+    - do kada se mogu odjavljuju [ispiti](ispit)?
+    - prijavio sam [ispit](ispit), kako ga mogu odjaviti?
+    - može li se [ispit](ispit) odjaviti?
+    - kako odjaviti ispit preko [studomata](platforma)?
+    - ne mogu odjaviti [ispit](ispit), što sad?
+    - imam problem s odjavom [ispita](ispit)
+    - gdje se točno odjavljuje [ispit](ispit)?
+    - zaboravio sam odjaviti [ispit](ispit), što mogu napraviti?
+    - što se događa ako ne odjavim [ispit](ispit)?
+    - do kada se vrši odjava ispita?
+    - kako znam je li mi [ispit](ispit) uspješno odjavljen?
+    - je li moguće kasno odjaviti [ispit](ispit)?
+    - koji je zadnji dan za odjavu [ispita](ispit)?
+
+- intent: studomat_nemogucnost_prijave
+  examples: |
+    - ne mogu prijaviti [ispit](ispit)?
+    - zašto ne mogu prijaviti [ispit](ispit)?
+    - ne mogu se prijaviti na [ispit](ispit)
+    - postoji li problem s prijavom [ispita](ispit)?
+    - kako riješiti problem kad ne mogu prijaviti [ispit](ispit)?
+    - nisam u mogućnosti prijaviti [ispit](ispit)
+
+- intent: studomat_ponovna_prijava_ispita
+  examples: |
+    - koliko puta mogu prijaviti [ispit](ispit)?
+    - ako sam položio [ispit](ispit), mogu li ga opet prijaviti?
+    - nisam zadovoljan ocjenom iz [ispita](ispit), mogu li opet prijaviti?
+    - može li se ponovo prijaviti isti [ispit](ispit)?
+    - želim ponovo prijaviti [ispit](ispit), je li to moguće?
+    - koliko je maksimalno ponovnih prijava [ispita](ispit)?
+
+- intent: studomat_pad_ispita
+  examples: |
+    - što ako padnem [ispit](ispit)?
+    - ako padnem [ispit](ispit), mogu li ponovno prijaviti [ispit](ispit)?
+    - pad [ispita](ispit), savjet...
+    - mogu li ponovno pristupiti [ispitu](ispit) ako sam pao?
+    - što se događa ako ne položim [ispit](ispit)?
+    - imam pad na [ispitu](ispit), što dalje?
+
+- intent: moodle_merlin
+  examples: |
+    - što je [moodle merlin](platforma)?
+    - što je [merlin](platforma)?
+    - kako se prijavljuje u [merlin](platforma)?
+    - čemu služi [merlin](platforma)?
+    - kako pristupiti [moodle merlin](platforma)?
+    - gdje mogu pronaći [merlin](platforma)?
+    - trebam pomoć za korištenje [moodle merlin](platforma)
+    - kako se koristi [merlin](platforma)?
+
+- intent: silabus_kolegija
+  examples: |
+    - što je [silabus](silabus) kolegija?
+    - možeš li mi objasniti što znači [silabus](silabus)?
+    - što predstavlja [silabus](silabus) kolegija?
+    - zašto postoji [silabus](silabus) kolegija?
+    - čemu služi [silabus](silabus) kolegija?
+    - što se nalazi u [silabus](silabus) kolegija?
+    - objasni mi pojam [silabus](silabus) kolegija
+    - koje informacije sadrži [silabus](silabus) kolegija?
+    - što uključuje [silabus](silabus) kolegija?
+    - možeš li mi reći za što je [silabus](silabus) kolegija?
+
+- intent: outlook
+  examples: |
+    - što je [outlook](platforma)?
+    - čemu služi [outlook](platforma)?
+    - za što se [outlook](platforma) koristi?
+    - možeš li mi objasniti pojam [outlook](platforma)?
+    - koja je svrha [outlooka](platforma)?
+    - kako se koristi [outlook](platforma)?
+    - je li [outlook](platforma) povezan s e-mailom?
+    - kako pristupiti [outlooku](platforma)?
+    - što mogu raditi u [outlooku](platforma)?
+    - gdje se prijavljujem u [outlook](platforma)?
+
+- intent: brucoš
+  examples: |
+    - objasnite mi pojam [brucoš](student)?
+    - tko je [brucoš](student)?
+    - što znači biti [brucoš](student)?
+    - što znači riječ [brucoš](student)?
+    - tko se naziva [brucošem](student)?
+    - možeš li mi objasniti tko je [brucoš](student)?
+    - što označava pojam [brucoš](student)?
+    - što je [brucoš](student) na  [fakultetu](fakultet)
+    - što znači biti [brucoš](student) na veleučilištu?
+    - [brucoš](student)
+
+- intent: apsolvent
+  examples: |
+    - objasnite mi pojam [apsolvent](student)?
+    - tko je [apsolvent](student)?
+    - što znači biti [apsolvent](student)?
+    - što znači riječ [apsolvent](student)?
+    - tko se naziva [apsolventom](student)?
+    - kako se postaje [apsolvent](student)?
+    - kada student postaje [apsolvent](student)?
+    - možeš li mi reći što znači biti [apsolvent](student)?
+    - koja su prava [apsolventa](student)?
+    - koliko dugo traje status [apsolventa](student)?
+    - [apsolvent](student)
+
+- intent: alumni
+  examples: |
+    - objasnite mi pojam [alumni](student)?
+    - tko je [alumni](student)?
+    - što znači biti [alumni](student)?
+    - kako se postaje [alumni](student)?
+    - [alumni](student)?
+    - kada student postaje [alumni](student)?
+    - što znači riječ [alumni](student)?
+    - značenje pojma [alumni](student)?
+    - koji su uvjeti da netko postane [alumni](student)?
+    - što znači član [alumni](student) zajednice?
+    
+- intent: kabinet
+  examples: |
+    - što je [kabinet](ured)?
+    - [profesor](nastavnik) mi je rekao da se nađemo u [kabinetu](ured) 423, što je to?
+    - što znači pojam [kabinet](ured)?
+    - [kabinet](ured)?
+    - [kabinet](ured), jel to neka prostorija?
+    - značenje pojma [kabinet](ured)?
+    - objasnite mi što znači [kabinet](ured)?
+    - gdje se nalazi [kabinet](ured) profesora?
+    - imam konzultacije u [kabinetu](ured), što to znači?
+    - što se obično radi u [kabinetu](ured)?
+
+- intent: konzultacije
+  examples: |
+    - što su [konzultacije](sastanak)?
+    - objasnite pojam [konzultacije](sastanak)?
+    - značenje pojma [konzultacije](sastanak)?
+    - što znači imati [konzultacije](sastanak) s [profesorom](nastavnik)?
+    - zašto postoje [konzultacije](sastanak)?
+    - gdje se održavaju [konzultacije](sastanak)?
+    - kako dogovoriti [konzultacije](sastanak)?
+    - što se radi na [konzultacijama](sastanak)?
+    - moram na [konzultacije](sastanak), što to podrazumijeva?
+
+- intent: terminski_plan
+  examples: |
+    - što je [terminski plan](dokument)?
+    - objasnite pojam [terminski plan](dokument)?
+    - značenje izraza [terminski plan](dokument)?
+    - gdje mogu pronaći [terminski plan](dokument)?
+    - kada izlazi [terminski plan](dokument)?
+    - za što služi [terminski plan](dokument)?
+    - čemu koristi [terminski plan](dokument)?
+    - tko objavljuje [terminski plan](dokument)?
+    - [terminski plan](dokument)?
+
+- intent: seminar
+  examples: |
+    - što je [seminar](projekt)?
+    - možeš li mi objasniti pojam [seminar](projekt)?
+    - što znači [seminar](projekt)?
+    - koja je svrha [seminara](projekt)?
+    - zašto [studenti](student) pišu [seminare](projekt)?
+    - koja je uloga [seminara](projekt) u studiju?
+    - čemu služi [seminarski rad](projekt)?
+    - što se očekuje u [seminarskom radu](projekt)?
+    - što obično sadrži jedan [seminar](projekt)?
+    - [seminar](projekt)?
+  
+- intent: kolokvij
+  examples: |
+    - što je [kolokvij](ispit)?
+    - [kolokvij](ispit)?
+    - kako se izvodi [kolokvij](ispit)?
+    - koliko traje jedan [kolokvij](ispit)?
+    - kako izgleda [kolokvij](ispit)?
+    - je li [kolokvij](ispit) obavezan?
+    - može li se pasti [kolokvij](ispit)?
+    - kada se piše [kolokvij](ispit)?
+    - kako se prijavljuje [kolokvij](ispit)?
+    - čemu služi [kolokvij](ispit)?
+
+- intent: kontinuirano_pracenje
+  examples: |
+    - što je [kontinuirano praćenje](evaluacija)?
+    - čemu služi [kontinuirano praćenje](evaluacija) [studenta](student)?
+    - možete li objasniti [kontinuirano praćenje](evaluacija)?
+    - što znači pojam [kontinuirano praćenje](evaluacija)?
+    - kako funkcionira [kontinuirano praćenje](evaluacija)?
+    - koji je cilj [kontinuiranog praćenja](evaluacija) [studenata](student)?
+    - kada se primjenjuje [kontinuirano praćenje](evaluacija)?
+    - kako [profesori](nastavnik) provode [kontinuirano praćenje](evaluacija)?
+    - je li [kontinuirano praćenje](evaluacija) obavezno?
+    - kako [student](student) zna da je pod [kontinuiranim praćenjem](evaluacija)?
+
+- intent: ishodi
+  examples: |
+    - što su [ishodi](poglavlja) učenja?
+    - čemu služe [ishodi](poglavlja) učenja?
+    - moram li položiti sve [ishode](poglavlja) na nekom [kolegiju](kolegij) da bih prošao?
+    - možete objasniti pojam [ishoda](poglavlja) učenja?
+    - zašto su bitni [ishodi](poglavlja) učenja?
+    - gdje mogu vidjeti [ishode](poglavlja) učenja [kolegija](kolegij)?
+    - [ishodi](poglavlja) učenja
+    - što ako ne ostvarim sve [ishode](poglavlja)?
+    - mogu li pasti kolegij zbog neostvarenih [ishoda](poglavlja)?
+
+- intent: nositelj_kolegija
+  examples: |
+    - što znači biti [nositelj](nastavnik) [kolegija](kolegij)?
+    - što radi [nositelj](nastavnik) [kolegija](kolegij)?
+    - koja je uloga [nositelja](nastavnik) [kolegija](kolegij)?
+    - možeš li objasniti što je [nositelj kolegija](nastavnik)?
+    - tko se može smatrati [nositeljem](nastavnik) [kolegija](kolegij)?
+    - koje su odgovornosti [nositelja kolegija](nastavnik)?
+    - što uključuje uloga [nositelja](nastavnik) [kolegija](kolegij)?
+    - [nositelj](nastavnik) [kolegija](kolegij)?
+    - kakvu ulogu ima [nositelj](nastavnik) na nekom [kolegiju](kolegij)?
+    - je li [nositelj](nastavnik) taj koji predaje [kolegij](kolegij)?
+
+- intent: asistent_kolegija
+  examples: |
+    - što znači biti [asistent](nastavnik) na [kolegiju](kolegij)?
+    - koja je uloga [asistenta](nastavnik) na [kolegiju](kolegij)?
+    - što radi [asistent](nastavnik)?
+    - tko je [asistent](nastavnik) na [nastavi](kolegij)?
+    - koje su odgovornosti [asistenta](nastavnik)?
+    - je li [asistent](nastavnik) osoba koja drži vježbe?
+    - koje zadatke ima [asistent](nastavnik) na [fakultetu](fakultet)?
+    - asistent](nastavnik) [kolegija](kolegij)
+
+- intent: referada
+  examples: |
+    - što je [referada](služba)?
+    - čemu služi [referada](služba)?
+    - koje su poslovi [referade](služba)?
+    - u čemu mi može pomoći [referada](služba)?
+    - imam pitanje u vezi [referade](služba)?
+    - [referada](služba)?
+    - koje su odgovornosti [referade](služba)?
+    - gdje se nalazi [referada](služba)?
+    - kako kontaktirati [referadu](služba)?
+    - tko radi u [referadi](služba)?
+    - koje usluge pruža [referada](služba)?
+
+- intent: redovni_student
+  examples: |
+    - kakav je to [redovni](student) student?
+    - tko se smatra [redovnim](student) studentom?
+    - [redovni](student) student?
+    - kakva su moja prava kao [redovni](student) student?
+    - koje su obveze [redovnog](student) studenta?
+    - koje pogodnosti ima [redovni](student) student?
+    - mogu li biti zaposlena osoba i [redovni](student) student?
+    - koji je status [redovnog](student) studenta u sustavu?
+    - kako znam jesam li [redovni](student) student?
+    - više informacija o [redovnim](student) studentima
+
+- intent: izvanredni_student
+  examples: |
+    - kakav je to [izvanredni](student) student?
+    - tko se smatra [izvanrednim](student) studentom?
+    - [izvanredni](student) student?
+    - kakva su moja prava kao [izvanredni](student) student?
+    - koje su obveze [izvanrednog](student) studenta?
+    - koje pogodnosti ima [redovni](student) student?
+    - mogu li biti zaposlena osoba i [izvanredni](student) student?
+    - koji je status [izvarednog](student) studenta u sustavu?
+    - kako znam jesam li [izvanredni](student) student?
+    - više informacija o [izvarednim](student) studentima
+
+- intent: redovni_izvaredni_razlike
+  examples: |
+    - možete mi reći koja je razlika između [redovnog](student) i [izvanrednog](student) studenta?
+    - koja je razlika između [redovnih](student) i [izvanrednih](student) studenata?
+    - razlika između [redovnog](student) i [izvanrednog](student) studenta?
+    - koji status ima [izvanredni](student) u odnosu na [redovnog](student)?
+    - koje su prednosti [redovnog](student) u odnosu na [izvanrednog](student)?
+    - mogu li se prebaciti s [izvanrednog](student) na [redovni](student) studij?
+    - koliko se plaća školarina za [izvanredne](student) studente u odnosu na [redovne](student)?
+    - koje su razlike u pravima između [redovnih](student) i [izvanrednih](student) studenata?
+    - [redovni](student) vs [izvaredni](student)?
+
+- intent: prava_studenta
+  examples: |
+    - koja su moja studentska prava?
+    - koja su prava studenata?
+    - koja su moja prava?
+    - prava kao [student](student)?
+    - koja su prava [izvanrednog](student) studenta?
+    - koja su prava [redovnog](student) studenta?
+    - što smijem kao [redovni](student) student?
+    - imam li ista prava kao [izvanredni](student) student?
+    - gdje mogu provjeriti prava [studenta](student)?
+    - koja su prava [brucoša](student)?
+    - koja prava ima [apsolvent](student)?
+    - što sve mogu kao [student](student)?
+
+
+- intent: studenski_posao
+  examples: |
+    - smijem li raditi dok studiram?
+    - rad uz studij?
+    - kao [redovni]
+    - mogu li raditi kao [redovni](student) student?
+    - mogu li raditi kao [izvanredni](student) student?
+    - rad kao student
+    - raditi i studirati 
+    - studenski posao 
+    - mogu li kao [redovni](student) student raditi studenski posao?
+    -  mogu li kao [izvanredni](student)student raditi studenski posao?
+    - kao [redovni](student) student, mogu li raditi preko student servisa?
+    - kao [izvanredni](student) student, mogu li naći posao preko studentskog servisa?
+
+
+- intent: prehrana
+  examples: |
+    - imam li kao [student](student) pravo na [prehranu](usluga)?
+    - koje su mogućnosti za [prehranu](usluga) studenata?
+    - kako doći do subvencije za [prehranu](usluga)?
+    - što znači subvencija za [prehranu](usluga)?
+    - imaju li[redovni](student) studenti  pravo na subvenciju prehrane?
+    - kako ostvariti pravo na subvenciju za prehranu kao [student](student)?
+    - postoji li besplatna ili subvencionirana [prehrana](usluga) za [studente](student)?
+    - mogu li koristiti studentski restoran za [prehranu](usluga)?
+    - koja je procedura za dobivanje subvencije prehrane?
+    - trebam li se prijaviti za subvenciju prehrane kao [izvanredni](student)?
+    - što mi treba da bih ostvario pravo na subvenciju prehrane?
+
+- intent: erasmus
+  examples: |
+    - što je erasmus program?
+    - možeš li mi objasniti što je erasmus?
+    - kako se prijaviti za erasmus?
+    - koji su uvjeti za sudjelovanje u erasmus programu?
+    - gdje mogu otići na erasmus razmjenu?
+    - koliko traje erasmus razmjena?
+    - mogu li kao student ići na erasmus?
+    - koje dokumente trebam za erasmus prijavu?
+    - koje su prednosti erasmus programa?
+    - kako funkcionira erasmus stipendija?
+    - što uključuje erasmus mobilnost?
+    - erasmus?
+
+- intent: referada_radno_vrijeme_kontakt
+  examples: |
+    - koje je radno vrijeme [referade](služba)?
+    - kad radi studenska [referada](služba)?
+    - možete li mi reći radno vrijeme [referade](služba)?
+    - kada mogu kontaktirati [referadu](služba)?
+    - radno vrijeme i kontakt studenske [referade](služba)
+    - koliko dugo radi [referada](služba) tijekom dana?
+    - hoću li dobiti broj telefona i radno vrijeme [referade](služba)?
+    - gdje mogu saznati radno vrijeme [referade](služba)?
+    - kontakt informacije i radno vrijeme [referade](služba)
+    - kada je službeni rad [referade](služba)?
+  
+- intent: knjižnica_radno_vrijeme_kontakt
+  examples: |
+    - koje je radno vrijeme [knjižnice](knjižnica)?
+    - kad radi studenska [knjižnica](knjižnica)?
+    - možete li mi reći radno vrijeme [knjižnice](knjižnica)?
+    - kada mogu kontaktirati [knjižnicu](knjižnica)?
+    - radno vrijeme i kontakt studenske [knjižnice](knjižnica)
+    - koliko dugo radi [knjižnica](knjižnica) tijekom dana?
+    - hoću li dobiti broj telefona i radno vrijeme [knjižnice](knjižnica)?
+    - gdje mogu saznati radno vrijeme [knjižnice](knjižnica)?
+    - kontakt informacije i radno vrijeme [knjižnice](knjižnica)
+    - kada je službeni rad [knjižnice](knjižnica)?
+    
+- intent: outside_scope
+  examples: |
+    - koja je razlika između mitologije i povijesti?
+    - kako fotosinteza utječe na život na zemlji?
+    - zašto je važno očuvati bioraznolikost?
+    - što znači pojam „građanska odgovornost“?
+    - koji su osnovni elementi dramskog teksta?
+    - zašto se zemlja okreće oko sunca?
+    - kako bi izgledao svijet bez interneta?
+    - tko je napisao roman „zločin i kazna“?
+    - na koji način kultura utječe na naš identitet?
+    - koje su posljedice klimatskih promjena?
+    - što podrazumijevamo pod izrazom „umjetna inteligencija“?
+    - zašto se povijest proučava u školama?
+    - koja je razlika između znanosti i pseudoznanosti?
+    - kako prepoznati manipulaciju u medijima?
+    - tko su bili iliri i kakvu su ulogu imali u hrvatskoj povijesti?
+    - što je ironija i kako se koristi u književnosti?
+    - koje su glavne značajke demokracije?
+    - zašto je važno čitati knjige?
+    - kako se gradi argumentirana rasprava?
+    - koji su osnovni elementi glazbene kompozicije?
+    - što znače izrazi „denotacija“ i „konotacija“ u jeziku?
+    - koje su razlike između fikcije i nefikcije?
+    - zašto je voda nezamjenjiva za život?
+    - kako funkcionira ljudski mozak?
+    - što označava pojam „digitalna pismenost“?
+    - tko je bio nikola tesla i zašto je važan?
+    - kako nastaje duga?
+    - zašto ljudi putuju?
+    - koja je uloga umjetnosti u društvu?
+    - kako tehnologija mijenja način na koji komuniciramo?
+    - što se podrazumijeva pod „kritičkim mišljenjem“?
+    - kako su nastali kontinenti?
+    - zašto je važno poštivati pravila u zajednici?
+    - koji su rizici pretjeranog korištenja društvenih mreža?
+    - kako prepoznati lažne vijesti?
+    - što je metafora i kako se koristi u svakodnevnom govoru?
+    - kako funkcionira parlamentarni sustav vlasti?
+    - zašto je matematika temelj mnogih znanosti?
+    - koje su temeljne etičke vrijednosti?
+    - kako nastaju potresi?
+    - zašto ljudi stvaraju umjetnost?
+    - što znače osnovne boje i kako se dobivaju sekundarne?
+
+
+# Lookup table za studij
+- lookup: studij
+  examples: |
+    - informatika
+    - informatike
+    - informatiku
+    - informatikom
+    - informacijske tehnologije
+    - informacijskih tehnologija
+    - informacijskim tehnologijama
+    - informacijska tehnologija
+    - IT
+    - informacijskim tehnologijama u poslovnim sustavima
+    - informacijske tehnologije u poslovnim sustavima
+
+# Lookup tabele za razina
+- lookup: razina
+  examples: |
+    - prijediplomski
+    - preddiplomski
+    - prijediplomskog
+    - diplomski
+    - osnovni studij
+    - drugi ciklus
+    - master studij 
+    - prijediplomska 
+    - diplomskoj
+
+# Sinonimi za studij
+- synonym: informatika
+  examples: |
+    - informatike
+    - informatiku
+    - informatikom
+    - inf
+    - INF
+- synonym: informacijske tehnologije
+  examples: |
+    - informacijska tehnologija
+    - informacijskih tehnologija
+    - informacijskim tehnologijama
+    - informacijske tehnologije u poslovnim sustavima
+    - itups
+    - inf tech u ps
+    - it u ps
+    - informatika diplomski 
+
+# Sinonimi za razina
+- synonym: prijediplomski
+  examples: |
+    - preddiplomski
+    - prijediplomskog 
+    - osnovni studij
+    - prijediplomksi
+    - prijediplomska
+- synonym: diplomski
+  examples: |
+    - drugi ciklus
+    - diplomskog 
+    - diplomskoj
+    - master studij
+
+- lookup: status
+  examples: |
+    - redovni
+    - redovno
+    - redovnom
+    - redoviti 
+    - izvanredni
+    - izvanredno
+    - vandredni 
+    - vandredno 
+    - vandrednom 
+
+- synonym: redovno
+  examples: |
+    - redovni
+    - redoviti
+    - redovnom 
+
+- synonym: izvanredno
+  examples: |
+    - izvanredni
+    - izvanrednom
+    - vandredno
+    - vandredni
+    - vandrednom
+
+- lookup: kolegij
+  examples: |
+    - predmet
+    - predmeti
+    - predmeta
+    - kolegiji
+    - kolegije
+    - poslovna komunikacija i suradnja
+    - proceduralno i modularno programiranje
+    - poslovni procesi u organizacijama
+    - engleski jezik za informatičare
+    - uvod u informacijske i komunikacijske tehnologije
+    - matematika za informatičare
+    - tjelesna i zdravstvena kultura 1
+    - objektno orijentirano programiranje
+    - specifikacija korisničkih zahtjeva i modeliranje procesa
+    - računalna grafika
+    - modeliranje podataka
+    - operacijski sustavi
+    - razvoj poslovne ideje
+    - tjelesna i zdravstvena kultura 2
+    - uvod u baze podataka
+    - uvod u računalne mreže
+    - razvoj aplikacijskog programskog sučelja
+    - multimedijski sustavi
+    - engleski jezik za projektante
+    - napredne teme iz operacijskih sustava
+    - osnove proceduralnog programiranja
+    - uvod u iot sustave
+    - poduzetništvo za informatičare
+    - sustavi baza podataka
+    - razvoj desktop aplikacija
+    - sigurnost informacijskih i komunikacijskih sustava
+    - sustavi za upravljanje sadržajem i dokumentima
+    - projektni praktikum
+    - sistemska infrastruktura za razvoj softvera
+    - razvoj mobilnih aplikacija
+    - upravljanje informatičkim projektima
+    - razvoj interaktivnih web aplikacija
+    - osnove umjetne inteligencije
+    - poslovna analitika i izvješćivanje
+    - 3d modeliranje
+    - napredne teme iz sigurnosti informacijskih i komunikacijskih sustava
+    - programsko inženjerstvo (prijediplomski)
+    - digitalni marketing
+    - semestralna stručna praksa
+    - završni rad
+    - modeliranje i simulacije
+    - upravljanje bazama podataka
+    - alati razvoja informacijskih sustava
+    - komunikacijske tehnologije
+    - upravljanje kvalitetom informacijskih sustava
+    - sustavi za vođenje proizvodnih procesa
+    - kontrola i revizija informacijskih sustava
+    - programsko inženjerstvo (diplomski)
+    - izgradnja objektno orijentiranih aplikacija
+    - izgradnja multimedijskih sustava
+    - računalno upravljanje složenim sustavima
+    - sučelje poslovnih i procesnih sustava
+    - distribuirani sustavi
+    - modularno programsko inženjerstvo
+    - sigurnost web aplikacija
+    - metodika stručnog i istraživačkog rada
+    - automatizacija uredskog poslovanja
+    - informacijski sustav za potporu odlučivanju
+    - ux/ui dizajn
+    - planiranje informacijskih sustava
+    - ergonomija i uporaba računala
+    - internet tehnologije i e-poslovanje
+    - specijalistička praksa
+    - diplomski rad
+    - izborni
+    - obavezni 
+
+- synonym: predmet
+  examples: |
+    - predmet
+    - predmeti 
+    - predmete
+- synonym: izborni
+  examples: |
+    - izborne
+    - neobavezni 
+
+- synonym: obavezni
+  examples: |
+    - obvezni
+    - obavezne
+
+- synonym: poslovna komunikacija i suradnja
+  examples: |
+    - komunikacija
+    - poslovna komunikacija
+    - komunikacija i suradnja
+    - komunikacije
+
+- synonym:  proceduralno i modularno programiranje
+  examples: |
+    - programiranje
+    - osnove programiranja
+    - programiranje 1
+    - pimp
+    - proceduralno porgramiranje
+    - modularno programiranje 
+    - uvod u programiranje
+    - proceduralnom i modularnom programiranju 
+
+- synonym: poslovni procesi u organizacijama
+  examples: |
+    - ppo
+    - poslovni procesi 
+    - procesi u org 
+
+- synonym: engleski jezik za informatičare
+  examples: |
+    - ej 
+    - engl 
+    - engleski za it
+    - ej za it
+    - engleski
+    - it engleski
+
+- synonym: uvod u informacijske i komunikacijske tehnologije
+  examples: |
+    - uikt
+    - uvod u informatiku
+    - osnove informatike
+    - it osnove 
+    - osnove inf
+    - informacijeke tehnologije 
+    - infomracijeke i komunikacijke tehnologije 
+    - komunikacijske tehnologije
+
+- synonym: matematika za informatičare
+  examples: |
+    - mat za inf 
+    - matematika
+    - it matematika
+    - matiša
+    - predmet koji svi vole
+
+- synonym: tjelesna i zdravstvena kultura 1
+  examples: |
+    - tzk 
+    - tjelesni
+    - nogomet  
+    - tjelesna kultura
+    - fizička kultura 
+    - tjelesni 1 
+
+- synonym: objektno orijentirano programiranje
+  examples: |
+    - oop
+    - programiranje 2
+    - objetno programiranje
+    - orijentalno programiranje
+
+- synonym: specifikacija korisničkih zahtjeva i modeliranje procesa
+  examples: |
+    - skzmp
+    - spec zahtjeva
+    - specifikaciji
+    - korisnički zahtjevi 
+    - modeliranje procesa
+    - specifikacija i modeliranje
+    - korisnički zahtejvi i modeliranje
+
+- synonym: računalna grafika
+  examples: |
+    - grafika
+    - rg 
+    - rač graf 
+
+- synonym: modeliranje podataka
+  examples: |
+    - mp 
+    - modeliranje
+    - modeliranje pod 
+    - podatkovno modeliranje
+
+- synonym: operacijski sustavi
+  examples: |
+    - os 
+    - sustavi 
+    - operacijskim 
+    - operacijski 
+
+- synonym: razvoj poslovne ideje
+  examples: |
+    - rpo
+    - razvoj ideje 
+    - poslovna ideja 
+    - razvoj pi 
+    - razvoj poslovne
+
+- synonym: tjelesna i zdravstvena kultura 2
+  examples: |
+    - tzk 2 
+    - tjelesni 2 
+    - nogomet 2 
+
+- synonym:  uvod u baze podataka
+  examples: |
+    - upd 
+    - bp 
+    - uvod u baze  
+    - baze podatka 
+    - baze 
+    - uvod u bp 
+
+- synonym: uvod u računalne mreže
+  examples: |
+    - računalne mreže
+    - mreže
+    - rm
+
+- synonym: razvoj aplikacijskog programskog sučelja
+  examples: |
+    - razvoj api-ja
+    - api
+    - rapi
+    - razvoj aplikacijskog sučelja
+    - aplikacijsko programsko sučelje 
+    - backend
+
+- synonym: multimedijski sustavi
+  examples: |
+    - mm
+    - multimedija
+    - multim
+
+- synonym: engleski jezik za projektante
+  examples: |
+    - ej 2 
+    - engl 2
+    - ej za projetante 
+    - engleski 2 
+    - it ej 2 
+
+- synonym: napredne teme iz operacijskih sustava
+  examples: |
+    - napredni os
+    - napredne operacijske 
+    - os 2 
+
+- synonym: osnove proceduralnog programiranja
+  examples: |
+    - osnove pp 
+    - osnove programiranja 
+    - proceduralno programiranje 
+    - izborno programiranje 
+
+- synonym: uvod u iot sustave
+  examples: |
+    - iot
+    - intrnet thinks 
+    - iot sustavi 
+    - uvod iot
+
+- synonym: poduzetništvo za informatičare
+  examples: |
+    - pzi 
+    - poduzetništvo 
+    - pod za inf
+    - it poduzetništvo 
+
+- synonym: sustavi baza podataka
+  examples: |
+    - subp
+    - baze 2
+    - sustavi baza 
+    - bp 2
+    - sustavi bp 
+
+- synonym: razvoj desktop aplikacija
+  examples: |
+    - rda
+    - desktop aplikacije
+    - desktop app
+    - razvoj desktopa
+
+- synonym: sigurnost informacijskih i komunikacijskih sustava
+  examples: |
+    - siks
+    - sigurnost
+    - sigurnost ikt
+
+- synonym: sustavi za upravljanje sadržajem i dokumentima
+  examples: |
+    - susd
+    - cms 
+    - upravljanje sadržajem 
+    - sustavi za upravljanje sadržajem 
+    - upravljanje sadržajem i dokumentima
+
+- synonym: projektni praktikum
+  examples: |
+    - pp
+    - projekt 
+    - praktikum 
+
+- synonym: sistemska infrastruktura za razvoj softvera
+  examples: |
+    - sirs
+    - infrastruktura 
+    - infrastruktura za razvoj soft 
+    - razvoj softvera
+    - sistemska infrastruktura
+
+- synonym: razvoj mobilnih aplikacija
+  examples: |
+    - rma
+    - mobilne
+    - razvoj mobilnih 
+    - mobilne aplikacije
+
+- synonym: upravljanje informatičkim projektima
+  examples: |
+    - uip
+    - upravljanje projektima
+    - eu fondovi 
+    - informatički pojekti 
+    - upravlje inf projektima
+    - inf projetki 
+    - it projekti 
+
+- synonym: razvoj interaktivnih web aplikacija
+  examples: |
+    - razvoj weba
+    - web app
+    - web apliakcije
+    - razvoj web app 
+
+- synonym: osnove umjetne inteligencije
+  examples: |
+    - ai 
+    - ui 
+    - osnove ai 
+    - osnove ui 
+    - umjetna
+
+- synonym: poslovna analitika i izvješćivanje
+  examples: |
+    - pai
+    - poslovna analitika 
+    - analitika
+    - izvješčivanje 
+    - analitika i izvješćivanje
+
+- synonym: 3d modeliranje
+  examples: |
+    - 3d 
+
+- synonym: napredne teme iz sigurnosti informacijskih i komunikacijskih sustava
+  examples: |
+    - siks 2
+    - napredni siks 
+    - napredne iz sigurnsoti 
+
+- synonym: programsko inženjerstvo (prijediplomski)
+  examples: |
+    - pi 
+    - softevrsko inženjerstvo 
+    - prog ing 
+    - soft ing
+
+- synonym: digitalni marketing
+  examples: |
+    - dm
+    - marketing 
+
+- synonym: semestralna stručna praksa
+  examples: |
+    - praksa 
+    - semestralna praksa 
+    - stručna praksa 
+    - vanjska praksa 
+
+- synonym: završni rad
+  examples: |
+    - završni 
+
+- synonym: modeliranje i simulacije
+  examples: |
+    - mis
+    - modeliranje 
+    - simulacije 
+
+- synonym: upravljanje bazama podataka
+  examples: |
+    - ubp
+    - upravljanje bazama 
+    - opet baze
+
+- synonym: alati razvoja informacijskih sustava
+  examples: |
+    - aris
+    - razvoj informacijskih sustava
+    - razvoj is 
+    - is razvoj 
+    - alati is 
+
+- synonym: komunikacijske tehnologije
+  examples: |
+    - komunikacijske 
+    - kom teh
+
+- synonym: upravljanje kvalitetom informacijskih sustava
+  examples: |
+    - ukis
+    - kvaliteta is 
+    - upravljanje kvalitetom is 
+    - upravaljnje is 
+
+- synonym: sustavi za vođenje proizvodnih procesa
+  examples: |
+    - svpp
+    - vođenje pp
+    - sustavi za proizvodne procese
+    - sustavi za pp
+    - vođenje proizvodnih procesa
+
+- synonym: kontrola i revizija informacijskih sustava
+  examples: |
+    - kiris
+    - kontorla informacijskih sustava
+    - kontrola i revizija
+    - kontrola i revizija is 
+    - kontrola is 
+    - revizija is
+    - revizija
+    - kontrola 
+
+- synonym: programsko inženjerstvo (diplomski)
+  examples: |
+    - pi 2 
+    - diplomski pi 
+    - prog ing
+
+- synonym: izgradnja objektno orijentiranih aplikacija
+  examples: |
+    - izgradnja oo app
+    - oo aplikacije 
+    - oo app
+    - objektno orijentiranih aplikacija
+
+- synonym: izgradnja multimedijskih sustava
+  examples: |
+    - izgradnja ms 
+    - ims 
+    - multimedija 2
+
+- synonym: računalno upravljanje složenim sustavima
+  examples: |
+    - rus 
+    - upravljanje složenim sustavima
+    - upravljanje ss
+    - računalno upravljanje
+    - računalno upravljanje ss
+
+- synonym: sučelje poslovnih i procesnih sustava
+  examples: |
+    - sučelje pps
+    - pps 
+    - poslovni i procesni sustavi 
+    - sučelje sustava 
+
+- synonym: distribuirani sustavi
+  examples: |
+    - ds 
+    - distributni 
+    - distributni sust
+
+- synonym: modularno programsko inženjerstvo
+  examples: |
+    - mpi 
+    - modularno ing 
+    - modularno inženjestvo 
+
+- synonym: sigurnost web aplikacija
+  examples: |
+    - sigurnsot weba
+    - web sigurnost 
+    - swa
+    - sigurnost aplikacija 
+    - sigurnost app
+
+- synonym: metodika stručnog i istraživačkog rada
+  examples: |
+    - msir
+    - metodika stručnog 
+    - istraživački rad
+    - metodika stručnog rada
+    - metodika istraživačkog rada
+
+- synonym: automatizacija uredskog poslovanja
+  examples: |
+    - aup
+    - automatizacija
+    - automatizacija poslovanje
+    - uredsko poslovanje
+
+- synonym: informacijski sustav za potporu odlučivanju
+  examples: |
+    - iszpo
+    - inf sustv za potporu 
+    - is za potporu 
+    - is potpora
+
+- synonym: ux/ui dizajn
+  examples: |
+    - ux dizajn 
+    - ui dizajn 
+    - ux/ui
+    - ux ui 
+    - dizajn
+
+- synonym:  planiranje informacijskih sustava
+  examples: |
+    - planiranje is
+    - is planiranje
+    - pis
+
+- synonym: ergonomija i uporaba računala
+  examples: |
+    - egronomija
+    - eiur
+    - eur
+    - uporaba računala 
+    - egronomija računala
+
+- synonym: internet tehnologije i e-poslovanje
+  examples: |
+    - internet 
+    - tehnologije i poslovanje
+    - itip 
+    - e-psolovanje
+    - it i e-poslovanje
+
+- synonym: specijalistička praksa
+  examples: |
+    - praksa
+    - specijalistička 
+    - završna praksa 
+
+- synonym: diplomski rad
+  examples: |
+    - diplomski
+
+- lookup: nastavnik
+  examples: |
+    - asistent
+    - asistenti
+    - nositelj
+    - nositelji
+    - osoba
+    - profesor
+    - profesori
+    - prof
+    - predavač
+    - predavači
+    - nastavnik
+    - nastavnici
+    - mentor
+    - pročelnik
+    - dr. sc. socio. Davor Širola
+    - dr. sc. socio. Ozren Rafajac
+    - dr. sc. socio. Sanja Raspor Janković
+    - Ivan Šimac
+    - dr. sc. socio. Elena Krelja Kurelović
+    - dr. sc. human. Tatjana Šepić
+    - dr. sc. socio. Ida Panev
+    - Bruno Polonijo
+    - Suzana Škarica Stupičić
+    - mr. sc. Katarina Volarić Nižić
+    - mr. sc. Jasminka Tomljanović
+    - dr. sc. socio. Sabrina Šuman
+    - Matea Pešut
+    - dr. sc. socio. Marina Rauker Koch
+    - dr. sc. socio. Bernard Vukelić
+    - dr. sc. socio. Alen Jakupović
+    - dr. sc. tech. Andrea Andrijašević
+    - dr. sc. socio. Marin Kaluža
+    - Vlatka Davidović
+    - Martin Golob
+    - MSc Žaklina Šupica
+    - mr. sc. Vesna Krajči
+    - dr. sc. human. Sanja Grakalić Plenković
+    - Kristina Dundović
+
+- synonym: nastavnik
+  examples: |
+    - asistent
+    - asistenti
+    - nositelj
+    - nositelji
+    - osoba
+    - profesor
+    - profesori
+    - prof
+    - predavač
+    - predavači
+    - mentor
+    - pročelnik
+    - mentora
+    
+
+- lookup: ispit
+  examples: |
+    - test
+    - završni ispit
+    - kolokvij
+    - usmeni
+
+- synonym: ispit
+  examples: |
+    - ispiti
+    - testovi
+    - kolokviji
+    - usmeno
+    - usmeni
+
+- lookup: semestar
+  examples: |
+    - prvi
+    - drugi
+    - treći
+    - četvrti 
+    - peti
+    - šesti
+    - 1
+    - 2 
+    - 3
+    - 4 
+    - 5 
+    - 6
+    - prvi diplomski
+    - drugi diplomski
+    - treći diplomski
+    - četvrti diplomski
+    - 1 diplomski
+    - 2 diplomski
+    - 3 diplomski
+    - 4 diplomski 
+    - zimski
+    - ljetni
+
+- synonym: prvi
+  examples: |
+    - 1
+    - prvi semestar
+    - 1 semestar
+
+- synonym: drugi
+  examples: |
+    - 2
+    - drugi semestar
+    - 2 semestar
+
+- synonym: treći
+  examples: |
+    - 3
+    - treći semestar
+    - 3 semestar
+
+- synonym: četvrti
+  examples: |
+    - četvrti
+    - 4
+    - četvrti semestar
+    - 4 semestar
+
+- synonym: peti
+  examples: |
+    - 5
+    - peti semestar
+    - 5 semestar
+
+- synonym: šesti
+  examples: |
+    - 6
+    - šesti semestar
+    - 6 semestar
+
+- synonym: prvi diplomski
+  examples: |
+    - 1 diplomski
+    - prvi semestar diplomskog
+    - sedmi
+
+- synonym: drugi diplomski
+  examples: |
+    - 2 diplomski
+    - drugi semestar diplomskog
+    - osmi
+
+- synonym: treći diplomski
+  examples: |
+    - treći semestar diplomskog
+    - 3 diplomski
+    - deveti 
+
+- synonym: četvrti diplomski
+  examples: |
+    - 4 diplomski
+    - četvrti semestar diplomskog
+    - deseti 
+
+- synonym: zimski
+  examples: |
+    - zimski semestar
+    - u zimskom semestru
+    - zimski
+
+- synonym: ljetni
+  examples: |
+    - ljetni semestar
+    - u ljetnom semestru
+    - ljetni
+
+- lookup: prodekan_funkcija
+  examples: |
+    - prodekan za nastavu
+    - prodekan za nastavu i studentska pitanja
+    - prodekan za studente
+    - nastavni prodekan
+
+    - prodekan za međunarodnu suradnju
+    - prodekan za međunarodne odnose
+    - međunarodni prodekan
+    - prodekan za Erasmus
+
+    - prodekan za poslovne odnose
+    - prodekan za poslovnu suradnju
+    - prodekan za gospodarstvo
+    - poslovni prodekan
+
+- synonym:   prodekan za nastavu i studentska pitanja
+  examples: |
+    - prodekan za nastavu 
+    - prodekan za studente
+    - nastavni prodekan
+    - prodekan za nastavu
+
+- synonym: prodekan za međunarodnu suradnju
+  examples: |
+    - prodekan za međunarodne odnose
+    - međunarodna suradnja
+    - prodekan za Erasmus
+    - međunarodni prodekan
+
+- synonym: prodekan za poslovne odnose
+  examples: |
+    - prodekan za poslovnu suradnju
+    - prodekan za gospodarstvo
+    - poslovni prodekan
+
+- lookup: odjel
+  examples: |
+    - ikt odjel
+    - ikt 
+    - odjel za informacijske i komunikacijske tehnologije
+    - poslovni odjel 
+    - odjel za elektortehniku 
+    - povoljoprivredni odjel 
+    - prometni odjel 
+    - sigurnosni odjel 
+
+- synonym: odjel za informacijske i komunikacijske tehnologije
+  examples: |
+    - ikt
+    - ikt odjel
+    - odjel ikt
+    - it odjel
+    - informatički odjel
+  
+- synonym: "dr. sc. socio. Davor Širola"
+  examples: |
+    - Davor Širola
+    - davor širola
+    - davor sirola
+    - dr. Davor Širola
+    - dr. Davor Sirola
+    - Širola
+    - sirola
+
+
+- synonym: "dr. sc. socio. Ozren Rafajac"
+  examples: |
+    - Ozren Rafajac
+    - ozren rafajac
+    - doc. dr. sc. Ozren Rafajac
+    - doc. Rafajac
+    - doc. Ozren
+    - ozren
+    - Ozren
+    - Rafajac
+    - rafajac
+
+
+- synonym: "dr. sc. socio. Sabrina Šuman"
+  examples: |
+    - Sabrina Šuman
+    - sabrina šuman
+    - doc. dr. sc. Sabrina Šuman
+    - doc. Šuman
+    - doc. Sabrina
+    - Sabrina
+    - Šuman
+    - šuman
+    - suman
+    - Suman
+    - sabrina
+    - šuman
+
+  
+
+- synonym: "Ivan Šimac"
+  examples: |
+    - Ivan Šimac
+    - ivan šimac
+    - Ivan Simac
+    - ivan simac
+    - Šimac
+    - Simac
+    - predavač šimac
+    - predavac simac
+    - Ivan
+    - ivan
+
+- synonym: "dr. sc. socio. Elena Krelja Kurelović"
+  examples: |
+    - Elena Krelja Kurelović
+    - elena krelja kurelović
+    - Elena Krelja Kurelovic
+    - elena krelja kurelovic
+    - doc.dr.sc. Elena Krelja Kurelović
+    - doc.dr.sc. Elena Krelja Kurelovic
+    - doc. Krelja Kurelović
+    - doc. Krelja Kurelovic
+    - doc. Elena
+    - Elena
+    - krelja kurelović
+    - krelja kurelovic
+    - Krelja Kurelović
+    - Krelja Kurelovic
+
+- synonym: "dr. sc. human. Tatjana Šepić"
+  examples: |
+    - Tatjana Šepić
+    - tatjana šepić
+    - Tatjana Sepic
+    - tatjana sepic
+    - doc.dr.sc. Tatjana Šepić
+    - doc.dr.sc. Tatjana Sepic
+    - doc. Šepić
+    - doc. Sepic
+    - doc. Tatjana
+    - Tatjana
+    - Šepić
+    - Sepic
+
+- synonym: "dr. sc. socio. Ida Panev"
+  examples: |
+    - Ida Panev
+    - ida panev
+    - dr. sc. Ida Panev
+    - dr. Ida Panev
+    - Ida
+    - Panev
+    - ida
+    - panev
+
+- synonym: "Bruno Polonijo"
+  examples: |
+    - Bruno Polonijo
+    - bruno polonijo
+    - Bruno Polonijo
+    - bruno polonijo
+    - asistent Bruno Polonijo
+    - asistent polonijo
+    - Polonijo
+    - polonijo
+    - bruno
+    - Bruno
+
+- synonym: "Suzana Škarica Stupičić"
+  examples: |
+    - Suzana Škarica Stupičić
+    - suzana škarica stupičić
+    - Suzana Skarica Stupicic
+    - suzana skarica stupicic
+    - suzana škarica
+    - suzana skarica
+    - škarica
+    - skarica
+    - asistentica suzana škarica
+    - asistentica suzana skarica
+    - asistentica stupičić
+    - asistentica stupicic
+    - asistentica suzana
+    
+
+- synonym: "mr. sc. Katarina Volarić Nižić"
+  examples: |
+    - Katarina Volarić Nižić
+    - katarina volarić nižić
+    - Katarina Volaric Nizic
+    - katarina volaric nizic
+    - katarina volarić
+    - katarina volaric
+    - volarić
+    - volaric
+    - mr. Katarina Volarić Nižić
+    - mr. Katarina Volaric Nizic
+    - mr. sc. Volarić
+    - mr. sc. Volaric
+
+- synonym: "mr. sc. Jasminka Tomljanović"
+  examples: |
+    - Jasminka Tomljanović
+    - jasminka tomljanović
+    - Jasminka Tomljanovic
+    - jasminka tomljanovic
+    - jasminka
+    - tomljanović
+    - tomljanovic
+    - mr. Jasminka Tomljanović
+    - mr. Jasminka Tomljanovic
+    - mr. sc. Tomljanović
+    - mr. sc. Tomljanovic
+
+
+- synonym: "Matea Pešut"
+  examples: |
+    - Matea Pešut
+    - matea pešut
+    - Matea Pesut
+    - matea pesut
+    - asistentica Matea Pešut
+    - asistentica Matea Pesut
+    - asistentica pešut
+    - asistentica pesut
+    - asistentica Matea
+    - asistentica matea
+    - Pešut
+    - pesut
+    - Matea
+    - matea
+
+- synonym: "dr. sc. socio. Marina Rauker Koch"
+  examples: |
+    - Marina Rauker Koch
+    - marina rauker koch
+    - Marina RaukerKoch
+    - marina raukerkoch
+    - dr. Marina Rauker Koch
+    - dr Marina Rauker Koch
+    - dr Rauker Koch
+    - dr Koch
+    - Rauker Koch
+    - rauker koch
+    - Koch
+    - koch
+    - Marina
+    - marina
+
+- synonym: "dr. sc. socio. Bernard Vukelić"
+  examples: |
+    - Bernard Vukelić
+    - bernard vukelić
+    - dr. Bernard Vukelić
+    - dr bernard vukelić
+    - doc. Bernard Vukelić
+    - doc bernard vukelić
+    - doc. Vukelić
+    - doc Vukelic
+    - Vukelić
+    - Vukelic
+    - bernard
+    - Bernard
+
+- synonym: "dr. sc. socio. Alen Jakupović"
+  examples: |
+    - Alen Jakupović
+    - alen jakupović
+    - izv. prof. Alen Jakupović
+    - izv.prof. Alen Jakupović
+    - izv.prof Alen Jakupović
+    - izv. prof. jakupović
+    - izv.prof jakupović
+    - izv.prof jakupovic
+    - izv. prof. Jakupović
+    - izv.prof. Jakupovic
+    - Jakupović
+    - Jakupovic
+    - alen
+    - Alen
+
+
+- synonym: "dr. sc. tech. Andrea Andrijašević"
+  examples: |
+    - Andrea Andrijašević
+    - andrea andrijašević
+    - dr. Andrea Andrijašević
+    - dr sc Andrea Andrijašević
+    - dr. sc. Andrea Andrijašević
+    - Andrijašević
+    - Andrijasevic
+    - andrijašević
+    - andrijasevic
+    - Andrea
+    - andrea
+
+- synonym: "dr. sc. socio. Marin Kaluža"
+  examples: |
+    - Marin Kaluža
+    - marin kaluza
+    - dr. Marin Kaluža
+    - dr sc Marin Kaluža
+    - dr. sc. Marin Kaluža
+    - doc. Marin Kaluža
+    - doc. kaluza
+    - kaluza
+    - Kaluža
+    - kaluza
+
+- synonym: "Vlatka Davidović"
+  examples: |
+    - Vlatka Davidović
+    - vlatka davidovic
+    - Davidović
+    - davidovic
+    - Vlatka
+
+- synonym: "Martin Golob"
+  examples: |
+    - Martin Golob
+    - martin golob
+    - Golob
+    - golob
+    - Martin
+
+- synonym: "MSc Žaklina Šupica"
+  examples: |
+    - Žaklina Šupica
+    - zaklina supica
+    - MSc Žaklina Šupica
+    - msc zaklina supica
+    - supica
+    - Žaklina
+
+- synonym: "mr. sc. Vesna Krajči"
+  examples: |
+    - Vesna Krajči
+    - vesna krajci
+    - mr. sc. Vesna Krajči
+    - krajči
+    - Vesna
+
+- synonym: "dr. sc. human. Sanja Grakalić Plenković"
+  examples: |
+    - Sanja Grakalić Plenković
+    - sanja grakalic plenkovic
+    - dr. sc. Sanja Grakalić Plenković
+    - dr. Sanja Grakalić Plenković
+    - Sanja Grakalic
+    - Grakalić Plenković
+    - grakalic plenkovic
+    - Sanja
+    - Plenković
+    - Plenkovic
+
+- synonym: "Kristina Dundović"
+  examples: |
+    - Kristina Dundović
+    - kristina dundovic
+    - Kristina
+    - Dundović
+    - Dundovic
+
+- lookup: iksica
+  examples: |
+    - iksica
+    - iskaznica
+    - studentska iskaznica
+    - studentska kartica
+
+- synonym: iksica
+  examples: |
+    - iskaznica
+    - studentska iskaznica
+    - studentska kartica
+  
+- lookup: jmbag
+  examples: |
+    - matiči broj akademskog građanina
+    - jedinstveni matiči broj akademskog građanina
+    - jedinstveni broj akademskog građanina
+    - JMBAG
+    - id studenta 
+
+- synonym: jmbag
+  examples: |
+    - matiči broj akademskog građanina
+    - jedinstveni matiči broj akademskog građanina
+    - jedinstveni broj akademskog građanina
+    - JMBAG
+    - id studenta 
+
+- lookup: ects
+  examples: |
+    - ECTS
+    - ects bodovi 
+
+- synonym: ects
+  examples: |
+    - ECTS
+    - ects bodovi 
+
+- lookup: studomat
+  examples: |
+    - studomat
+    - studomatu
+    - aplikacija za ispite
+    - studentska aplikacija
+    - sustav za prijavu ispita
+
+- synonym: studomat
+  examples: |
+    - studomat
+    - studomatu
+    - aplikacija za ispite
+
+- lookup: moodle_merlin
+  examples: |
+    - merlin
+    - merlin 24/25
+    - merlin 25/26
+    - moodle
+    - Merlin
+
+- synonym: moodle_merlin
+  examples: |
+    - merlin
+    - moodle
+    - platforma merlin
+    - sustav merlin
+    - merlin 24/25
+    - merlin 25/26
+    - Moodle
+    - MERLIN
+
+- lookup: silabus
+  examples: |
+    - silabus
+    - plan i program
+    - nastavni plan
+    - opis kolegija
+    - program kolegija
+
+- synonym: silabus
+  examples: |
+    - silabus
+    - plan i program
+    - nastavni plan
+    - opis kolegija
+    - program kolegija
+    - plan kolegija
+    - nastavni program
+    - sadržaj kolegija
+
+- lookup: student
+  examples: |
+    - student
+    - studenti
+    - studenta
+    - studentica
+    - brucoš
+    - apsolvent
+    - alumni
+    - redovni student
+    - redoviti student
+    - izvanredni student
+    - redovni
+    - redoviti
+    - redovnog
+    - redovnih
+    - izvanredni
+    - izvanrednog
+    - izvanrednih
+
+- synonym: student
+  examples: |
+    - student
+    - studenti
+    - studenta
+    - studentica
+    - brucoš
+    - apsolvent
+    - alumni
+    - redovni student
+    - redoviti student
+    - izvanredni student
+    - redovni
+    - redoviti
+    - redovnog
+    - redovnih
+    - izvanredni
+    - izvanrednog
+    - izvanrednih
+
+
+
+- lookup: kabinet
+  examples: |
+    - kabinetu
+    - kabineti
+    - ured
+    - ured profesora
+    - prostorija
+    - prostorije
+
+- synonym: kabinet
+  examples: |
+    - kabinet
+    - ured
+    - ured profesora
+    - prostorija
+    - soba
+    - kabinetu
+    - kabineti
+
+- synonym: konzultacije
+  examples: |
+    - sastanak
+    - meeting
+    - susret
+    - razgovor
+    - sastanci
+
+- synonym: konzultacije
+  examples: |
+    - sastanak
+    - meeting
+    - susret
+    - razgovor
+    - konzultacijski sat
+    - konzultacijski sastanak
+    - konzultacije s profesorom
+    - konzultacije s nastavnikom
+    
+- lookup: seminar
+  examples: |
+    - seminarski rad
+    - seminarski projekt
+    - projekt
+    
+
+- synonym: seminar
+  examples: |
+    - seminarski rad
+    - seminarski projekt
+    - projekt
+    - prezentacija
+
+- lookup: kontinuirano_pracenje
+  examples: |
+    - praćenje studenta
+    - praćenje napretka
+    - redovito praćenje
+    - monitoring studenta
+    - evaulacija 
+
+- synonym: kontinuirano_pracenje
+  examples: |
+    - praćenje studenta
+    - redovito praćenje
+    - monitoring studenta
+    - praćenje napretka
+    - evaulacija 
+
+
+
+- lookup: usluga
+  examples: |
+    - prehrana
+    - obrok
+    - menza
+    - subvencija prehrane
+    - studentska prehrana
+    - studentski obrok
+    - hrana  
+    - obroci
+  
+
+- synonym: usluga
+  examples: |
+    - prehrana
+    - obrok
+    - menza
+    - subvencija prehrane
+    - studentska prehrana
+    - studentski obrok
+    - hrana
+
+- synonym: erasmus
+  examples: |
+    - erasmus program
+    - erasmus razmjena
+    - studentska razmjena
+    - međunarodna razmjena
+
+- lookup: referada
+  examples: |
+    - studentska referada
+    - studenska služba
+    - ured za studente
+    - studentska služba
+    - služba
+
+- synonym: referada
+  examples: |
+    - referada
+    - služba
+    - studentska referada
+    - studentska služba
+    - ured za studente
+  
+- synonym: knjižnica
+  examples: |
+    - knjižnice
+    - knjižnicu 
+
+- lookup: fakultet
+  examples: |
+    - faks
+    - fakultet
+    - fakulteta
+    - fakultetu
+    - na faksu
+    - s faksa
+    - sa fakulteta
+
+- synonym: fakultet
+  examples: |
+    - faks
+    - fakulteta
+    - fakultetu
+    - na faksu
+    - s faksa
+    - sa fakulteta
+
+ 

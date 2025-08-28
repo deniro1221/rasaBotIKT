@@ -1,0 +1,90 @@
+[
+  {
+    "name": "studij",
+    "pattern": "(\\binformatika\\b|\\binformatike\\b|\\binformatiku\\b|\\binformatikom\\b|\\binformacijske\\ tehnologije\\b|\\binformacijskih\\ tehnologija\\b|\\binformacijskim\\ tehnologijama\\b|\\binformacijska\\ tehnologija\\b|\\bIT\\b|\\binformacijskim\\ tehnologijama\\ u\\ poslovnim\\ sustavima\\b|\\binformacijske\\ tehnologije\\ u\\ poslovnim\\ sustavima\\b)"
+  },
+  {
+    "name": "razina",
+    "pattern": "(\\bprijediplomski\\b|\\bpreddiplomski\\b|\\bprijediplomskog\\b|\\bdiplomski\\b|\\bosnovni\\ studij\\b|\\bdrugi\\ ciklus\\b|\\bmaster\\ studij\\b|\\bprijediplomska\\b|\\bdiplomskoj\\b)"
+  },
+  {
+    "name": "status",
+    "pattern": "(\\bredovni\\b|\\bredovno\\b|\\bredovnom\\b|\\bredoviti\\b|\\bizvanredni\\b|\\bizvanredno\\b|\\bvandredni\\b|\\bvandredno\\b|\\bvandrednom\\b)"
+  },
+  {
+    "name": "kolegij",
+    "pattern": "(\\bpredmet\\b|\\bpredmeti\\b|\\bpredmeta\\b|\\bkolegiji\\b|\\bkolegije\\b|\\bposlovna\\ komunikacija\\ i\\ suradnja\\b|\\bproceduralno\\ i\\ modularno\\ programiranje\\b|\\bposlovni\\ procesi\\ u\\ organizacijama\\b|\\bengleski\\ jezik\\ za\\ informatičare\\b|\\buvod\\ u\\ informacijske\\ i\\ komunikacijske\\ tehnologije\\b|\\bmatematika\\ za\\ informatičare\\b|\\btjelesna\\ i\\ zdravstvena\\ kultura\\ 1\\b|\\bobjektno\\ orijentirano\\ programiranje\\b|\\bspecifikacija\\ korisničkih\\ zahtjeva\\ i\\ modeliranje\\ procesa\\b|\\bračunalna\\ grafika\\b|\\bmodeliranje\\ podataka\\b|\\boperacijski\\ sustavi\\b|\\brazvoj\\ poslovne\\ ideje\\b|\\btjelesna\\ i\\ zdravstvena\\ kultura\\ 2\\b|\\buvod\\ u\\ baze\\ podataka\\b|\\buvod\\ u\\ računalne\\ mreže\\b|\\brazvoj\\ aplikacijskog\\ programskog\\ sučelja\\b|\\bmultimedijski\\ sustavi\\b|\\bengleski\\ jezik\\ za\\ projektante\\b|\\bnapredne\\ teme\\ iz\\ operacijskih\\ sustava\\b|\\bosnove\\ proceduralnog\\ programiranja\\b|\\buvod\\ u\\ iot\\ sustave\\b|\\bpoduzetništvo\\ za\\ informatičare\\b|\\bsustavi\\ baza\\ podataka\\b|\\brazvoj\\ desktop\\ aplikacija\\b|\\bsigurnost\\ informacijskih\\ i\\ komunikacijskih\\ sustava\\b|\\bsustavi\\ za\\ upravljanje\\ sadržajem\\ i\\ dokumentima\\b|\\bprojektni\\ praktikum\\b|\\bsistemska\\ infrastruktura\\ za\\ razvoj\\ softvera\\b|\\brazvoj\\ mobilnih\\ aplikacija\\b|\\bupravljanje\\ informatičkim\\ projektima\\b|\\brazvoj\\ interaktivnih\\ web\\ aplikacija\\b|\\bosnove\\ umjetne\\ inteligencije\\b|\\bposlovna\\ analitika\\ i\\ izvješćivanje\\b|\\b3d\\ modeliranje\\b|\\bnapredne\\ teme\\ iz\\ sigurnosti\\ informacijskih\\ i\\ komunikacijskih\\ sustava\\b|\\bprogramsko\\ inženjerstvo\\ \\(prijediplomski\\)\\b|\\bdigitalni\\ marketing\\b|\\bsemestralna\\ stručna\\ praksa\\b|\\bzavršni\\ rad\\b|\\bmodeliranje\\ i\\ simulacije\\b|\\bupravljanje\\ bazama\\ podataka\\b|\\balati\\ razvoja\\ informacijskih\\ sustava\\b|\\bkomunikacijske\\ tehnologije\\b|\\bupravljanje\\ kvalitetom\\ informacijskih\\ sustava\\b|\\bsustavi\\ za\\ vođenje\\ proizvodnih\\ procesa\\b|\\bkontrola\\ i\\ revizija\\ informacijskih\\ sustava\\b|\\bprogramsko\\ inženjerstvo\\ \\(diplomski\\)\\b|\\bizgradnja\\ objektno\\ orijentiranih\\ aplikacija\\b|\\bizgradnja\\ multimedijskih\\ sustava\\b|\\bračunalno\\ upravljanje\\ složenim\\ sustavima\\b|\\bsučelje\\ poslovnih\\ i\\ procesnih\\ sustava\\b|\\bdistribuirani\\ sustavi\\b|\\bmodularno\\ programsko\\ inženjerstvo\\b|\\bsigurnost\\ web\\ aplikacija\\b|\\bmetodika\\ stručnog\\ i\\ istraživačkog\\ rada\\b|\\bautomatizacija\\ uredskog\\ poslovanja\\b|\\binformacijski\\ sustav\\ za\\ potporu\\ odlučivanju\\b|\\bux/ui\\ dizajn\\b|\\bplaniranje\\ informacijskih\\ sustava\\b|\\bergonomija\\ i\\ uporaba\\ računala\\b|\\binternet\\ tehnologije\\ i\\ e\\-poslovanje\\b|\\bspecijalistička\\ praksa\\b|\\bdiplomski\\ rad\\b|\\bizborni\\b|\\bobavezni\\b)"
+  },
+  {
+    "name": "nastavnik",
+    "pattern": "(\\basistent\\b|\\basistenti\\b|\\bnositelj\\b|\\bnositelji\\b|\\bosoba\\b|\\bprofesor\\b|\\bprofesori\\b|\\bprof\\b|\\bpredavač\\b|\\bpredavači\\b|\\bnastavnik\\b|\\bnastavnici\\b|\\bmentor\\b|\\bpročelnik\\b|\\bdr\\.\\ sc\\.\\ socio\\.\\ Davor\\ Širola\\b|\\bdr\\.\\ sc\\.\\ socio\\.\\ Ozren\\ Rafajac\\b|\\bdr\\.\\ sc\\.\\ socio\\.\\ Sanja\\ Raspor\\ Janković\\b|\\bIvan\\ Šimac\\b|\\bdr\\.\\ sc\\.\\ socio\\.\\ Elena\\ Krelja\\ Kurelović\\b|\\bdr\\.\\ sc\\.\\ human\\.\\ Tatjana\\ Šepić\\b|\\bdr\\.\\ sc\\.\\ socio\\.\\ Ida\\ Panev\\b|\\bBruno\\ Polonijo\\b|\\bSuzana\\ Škarica\\ Stupičić\\b|\\bmr\\.\\ sc\\.\\ Katarina\\ Volarić\\ Nižić\\b|\\bmr\\.\\ sc\\.\\ Jasminka\\ Tomljanović\\b|\\bdr\\.\\ sc\\.\\ socio\\.\\ Sabrina\\ Šuman\\b|\\bMatea\\ Pešut\\b|\\bdr\\.\\ sc\\.\\ socio\\.\\ Marina\\ Rauker\\ Koch\\b|\\bdr\\.\\ sc\\.\\ socio\\.\\ Bernard\\ Vukelić\\b|\\bdr\\.\\ sc\\.\\ socio\\.\\ Alen\\ Jakupović\\b|\\bdr\\.\\ sc\\.\\ tech\\.\\ Andrea\\ Andrijašević\\b|\\bdr\\.\\ sc\\.\\ socio\\.\\ Marin\\ Kaluža\\b|\\bVlatka\\ Davidović\\b|\\bMartin\\ Golob\\b|\\bMSc\\ Žaklina\\ Šupica\\b|\\bmr\\.\\ sc\\.\\ Vesna\\ Krajči\\b|\\bdr\\.\\ sc\\.\\ human\\.\\ Sanja\\ Grakalić\\ Plenković\\b|\\bKristina\\ Dundović\\b)"
+  },
+  {
+    "name": "ispit",
+    "pattern": "(\\btest\\b|\\bzavršni\\ ispit\\b|\\bkolokvij\\b|\\busmeni\\b)"
+  },
+  {
+    "name": "semestar",
+    "pattern": "(\\bprvi\\b|\\bdrugi\\b|\\btreći\\b|\\bčetvrti\\b|\\bpeti\\b|\\bšesti\\b|\\b1\\b|\\b2\\b|\\b3\\b|\\b4\\b|\\b5\\b|\\b6\\b|\\bprvi\\ diplomski\\b|\\bdrugi\\ diplomski\\b|\\btreći\\ diplomski\\b|\\bčetvrti\\ diplomski\\b|\\b1\\ diplomski\\b|\\b2\\ diplomski\\b|\\b3\\ diplomski\\b|\\b4\\ diplomski\\b|\\bzimski\\b|\\bljetni\\b)"
+  },
+  {
+    "name": "prodekan_funkcija",
+    "pattern": "(\\bprodekan\\ za\\ nastavu\\b|\\bprodekan\\ za\\ nastavu\\ i\\ studentska\\ pitanja\\b|\\bprodekan\\ za\\ studente\\b|\\bnastavni\\ prodekan\\b|\\bprodekan\\ za\\ međunarodnu\\ suradnju\\b|\\bprodekan\\ za\\ međunarodne\\ odnose\\b|\\bmeđunarodni\\ prodekan\\b|\\bprodekan\\ za\\ Erasmus\\b|\\bprodekan\\ za\\ poslovne\\ odnose\\b|\\bprodekan\\ za\\ poslovnu\\ suradnju\\b|\\bprodekan\\ za\\ gospodarstvo\\b|\\bposlovni\\ prodekan\\b)"
+  },
+  {
+    "name": "odjel",
+    "pattern": "(\\bikt\\ odjel\\b|\\bikt\\b|\\bodjel\\ za\\ informacijske\\ i\\ komunikacijske\\ tehnologije\\b|\\bposlovni\\ odjel\\b|\\bodjel\\ za\\ elektortehniku\\b|\\bpovoljoprivredni\\ odjel\\b|\\bprometni\\ odjel\\b|\\bsigurnosni\\ odjel\\b)"
+  },
+  {
+    "name": "iksica",
+    "pattern": "(\\biksica\\b|\\biskaznica\\b|\\bstudentska\\ iskaznica\\b|\\bstudentska\\ kartica\\b)"
+  },
+  {
+    "name": "jmbag",
+    "pattern": "(\\bmatiči\\ broj\\ akademskog\\ građanina\\b|\\bjedinstveni\\ matiči\\ broj\\ akademskog\\ građanina\\b|\\bjedinstveni\\ broj\\ akademskog\\ građanina\\b|\\bJMBAG\\b|\\bid\\ studenta\\b)"
+  },
+  {
+    "name": "ects",
+    "pattern": "(\\bECTS\\b|\\bects\\ bodovi\\b)"
+  },
+  {
+    "name": "studomat",
+    "pattern": "(\\bstudomat\\b|\\bstudomatu\\b|\\baplikacija\\ za\\ ispite\\b|\\bstudentska\\ aplikacija\\b|\\bsustav\\ za\\ prijavu\\ ispita\\b)"
+  },
+  {
+    "name": "moodle_merlin",
+    "pattern": "(\\bmerlin\\b|\\bmerlin\\ 24/25\\b|\\bmerlin\\ 25/26\\b|\\bmoodle\\b|\\bMerlin\\b)"
+  },
+  {
+    "name": "silabus",
+    "pattern": "(\\bsilabus\\b|\\bplan\\ i\\ program\\b|\\bnastavni\\ plan\\b|\\bopis\\ kolegija\\b|\\bprogram\\ kolegija\\b)"
+  },
+  {
+    "name": "student",
+    "pattern": "(\\bstudent\\b|\\bstudenti\\b|\\bstudenta\\b|\\bstudentica\\b|\\bbrucoš\\b|\\bapsolvent\\b|\\balumni\\b|\\bredovni\\ student\\b|\\bredoviti\\ student\\b|\\bizvanredni\\ student\\b|\\bredovni\\b|\\bredoviti\\b|\\bredovnog\\b|\\bredovnih\\b|\\bizvanredni\\b|\\bizvanrednog\\b|\\bizvanrednih\\b)"
+  },
+  {
+    "name": "kabinet",
+    "pattern": "(\\bkabinetu\\b|\\bkabineti\\b|\\bured\\b|\\bured\\ profesora\\b|\\bprostorija\\b|\\bprostorije\\b)"
+  },
+  {
+    "name": "seminar",
+    "pattern": "(\\bseminarski\\ rad\\b|\\bseminarski\\ projekt\\b|\\bprojekt\\b)"
+  },
+  {
+    "name": "kontinuirano_pracenje",
+    "pattern": "(\\bpraćenje\\ studenta\\b|\\bpraćenje\\ napretka\\b|\\bredovito\\ praćenje\\b|\\bmonitoring\\ studenta\\b|\\bevaulacija\\b)"
+  },
+  {
+    "name": "usluga",
+    "pattern": "(\\bprehrana\\b|\\bobrok\\b|\\bmenza\\b|\\bsubvencija\\ prehrane\\b|\\bstudentska\\ prehrana\\b|\\bstudentski\\ obrok\\b|\\bhrana\\b|\\bobroci\\b)"
+  },
+  {
+    "name": "referada",
+    "pattern": "(\\bstudentska\\ referada\\b|\\bstudenska\\ služba\\b|\\bured\\ za\\ studente\\b|\\bstudentska\\ služba\\b|\\bslužba\\b)"
+  },
+  {
+    "name": "fakultet",
+    "pattern": "(\\bfaks\\b|\\bfakultet\\b|\\bfakulteta\\b|\\bfakultetu\\b|\\bna\\ faksu\\b|\\bs\\ faksa\\b|\\bsa\\ fakulteta\\b)"
+  }
+]

@@ -1,0 +1,384 @@
+version: "3.1"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+  - pozdrav
+  - rastanak
+  - zahvala
+  - informacije_o_studiju
+  - opis_prijediplomski
+  - opis_diplomski
+  - trajanje_studija
+  - razine_studija
+  - upis_prijediplomski
+  - upis_diplomski
+  - redovno_studiranje
+  - izvanredno_studiranje
+  - troškovi_studija
+  - titula_nakon_studija
+  - izazovi_studiranja_ikt
+  - prednosti_studiranja_ikt
+  - ishodi_ucenja_prijediplomski
+  - ishodi_ucenja_diplomski
+  - mogućnosti_nakon_završetka_studija
+  - popis_kolegija_prijediplomski
+  - popis_kolegija_diplomski
+  - opis_kolegija
+  - nositelji_asistenti_kolegija
+  - polaganje_kolegija
+  - prijava_ispita
+  - najzahtjevniji_kolegiji
+  - izborni_kolegiji
+  - semestralna_stručna_praksa
+  - izbor_mentora
+  - prijava_završnog_diplomskog
+  - pisanje_završnog_diplomskog
+  - obrana_završnog_diplomskog
+  - dekan
+  - prodekani_svi
+  - prodekan_nastava
+  - prodekan_međunarodna
+  - prodekan_poslovni
+  - pročelnik_ikt_odjela
+  - kontakt_nastavnici
+  - mentoriranje_studenta
+  - sto_je_iksica
+  - izrada_iksice
+  - svrha_iksice
+  - nestanak_iksice
+  - jmbag
+  - kolegij_opis
+  - ects_značenje
+  - ects_ostvarivanje
+  - semestar_info
+  - studomat
+  - studomat_prijava_ispita
+  - studomat_odjava_ispita
+  - studomat_nemogucnost_prijave
+  - studomat_pad_ispita
+  - moodle_merlin
+  - outlook
+  - brucoš
+  - apsolvent
+  - alumni
+  - kabinet
+  - konzultacije
+  - terminski_plan
+  - seminar
+  - kolokvij
+  - kontinuirano_pracenje
+  - ishodi
+  - nositelj_kolegija
+  - asistent_kolegija
+  - referada
+  - redovni_student
+  - izvanredni_student
+  - redovni_izvanredni_razlike
+  - prava_studenta
+  - studenski_posao
+  - erasmus
+  - referada_radno_vrijeme_kontakt
+  - knjižnica_radno_vrijeme_kontakt
+  - outside_scope
+  - silabus_kolegija
+  - prehrana
+
+
+entities:
+  - studij
+  - odjel
+  - status
+  - fakultet
+  - kolegij
+  - nastavnik
+  - ispit
+  - prodekan_funkcija
+  - student
+  - jmbag
+  - ects
+  - semestar
+  - platforma
+  - silabus
+  - ured
+  - sastanak
+  - dokument
+  - projekt
+  - evaluacija
+  - poglavlja
+  - služba
+  - usluga
+  - knjižnica
+
+
+slots:
+
+  kolegij:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: kolegij
+
+  nositelj:
+    type: list
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: nastavnik
+
+
+  nastavnik:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: nastavnik
+
+responses:
+  utter_pozdrav:
+    - text: "Pozdrav, ovdje je chatbot Odjela za informacijske i komunikacijske tehnologije Veleučilišta u Rijeci. Ovdje sam da Vam pružim informacije o našem odjelu. Kako Vam mogu pomoći?"
+
+  utter_infomacije_o_studiju:
+    - text: "Naravno! Odjel za informacijske i komunikacijske tehnologije Veleučilišta u Rijeci trenutno izvodi stručni prijediplomski studij informatike u trajanju od 3 godine (180 ECTS) na prijediplomskoj razini. Na diplomskoj razini izvodi stručni diplomski studij informacijske tehnologije u poslovnim sustavima, koji se dijeli na module: Programsko inženjerstvo u poslovnim sustavima i Poslovni informacijski sustavi u trajanju od 2 godine (120 ECTS)."
+
+  utter_opis_prijediplomskog:
+    - text: "Prijediplomski studij informatike je studij koji traje tri godine (180 ECTS) i omogućava stjecanje osnovnog nivoa znanja u području informatike (znanost o podacima, razvoj softvera, multimedija, te stjecanje poduzetničkih kompetencija). Nastava uključuje predavanja, vježbe i projekte."
+
+  utter_opis_diplomskog:
+    - text: "Diplomski studij informacijske tehnologije u poslovnim sustavima specijalistički je studij od dvije godine (120 ECTS) te studentima omogućuje stjecanje kompetencija iz programskog inženjerstva ili poslovnih informacijskih sustava."
+
+  utter_trajanje_studija:
+    - text: "Stručni prijediplomski studij informatike traje 3 godine ili 6 semestara (180 ECTS), dok stručni diplomski studij informacijske tehnologije u poslovnim sustavima traje 2 godine ili 4 semestara (120 ECTS)."
+
+  utter_razine_studija:
+    - text: "Na Odjelu IKT postoje dvije razine studija: stručni prijediplomski studij informatika i stručni diplomski studij informacijske tehnologije u poslovnim sustavima."
+
+  utter_informacije_o_redovnom:
+    - text: "Na IKT odjelu i prijediplomski i diplomski studij mogu se studirati redovno, što znači da je student u redovnom statusu i ima sva moguća studentska prava, ali i obaveze poput redovnog pohađanja nastave, redovnog pristupanja kolokvijima i svim drugim aktivnostima vezane za polaganje ishoda, te naravno polaganje barem 50% ishoda kolegija ukoliko želi pristupiti završnom ispitu."
+
+  utter_informacije_o_izvanrednom:
+    - text: "Na IKT odjelu može se i prijediplomski i diplomski studij studirati u izvanrednom statusu, što omogućava fleksibilnije studiranje, ali zato student u izvanrednom statusu nema sva studentska prava i školarinu u potpunosti mora sam platiti."
+
+  utter_titula_nakon_studija:
+    - text: "Nakon završenog prijediplomskog studija informatike osoba stječe titulu prvostupnik/ca (baccalaureus/baccalaurea) informatike, odnosno bacc.inf. Završetkom diplomskog studija stječe se naziv magistar/magistra poslovnih informacijskih sustava ili mag.inf."
+
+  utter_izazovi_studiranja_ikt:
+    - text: "Na studiju se naglašava timski rad i rad na projektima koji, osim razvijanja tehničkih vještina, zahtijevaju i razvijanje tzv. mekih vještina. Sektor je dosta mješovit po opsegu tehničkog i ekonomskog posla pa treba biti u mogućnosti balansirati nekoliko pristupa. Također, veliki naglasak je stavljen na razvijanje same dokumentacije, što nekima predstavlja izazov. Ne smiju se zaboraviti ni oni kolegiji koji zahtijevaju dugotrajnu vježbu i pripremu kao oni tzv. programski kolegiji."
+
+  utter_prednosti_studiranja_ikt:
+    - text: "Studij nudi široki spektar znanja iz različitih područja IKT-a, kako teorijski, tako i praktično. Studenti se već od samog početka pripremaju da nauče razmišljati kao budući softverski inženjeri koji primjenjuju svoja teorijska znanja u praksi u kombinaciji sa stvaranjem poduzetničkog duha."
+
+  utter_ishodi_ucenja_prijediplomski:
+    - text: "Detaljne ishode učenja za stručni prijediplomski studij informatike možete pronaći na službenoj stranici Veleučilišta u Rijeci: [Ishodi učenja](https://www.veleri.hr/hr/studijski-programi/124/strucni-prijediplomski-studij-informatika)."
+
+  utter_ishodi_ucenja_diplomski:
+    - text: "Detaljne ishode učenja za stručni diplomski studij informacijske tehnologije u poslovnim sustavima možete pronaći na službenoj stranici Veleučilišta u Rijeci: [Ishodi učenja](https://www.veleri.hr/hr/studijski-programi/122/strucni-diplomski-studij-informacijske-tehnologije-u-poslovnim-sustavima)."
+
+  utter_mogucnosti_nakon_studija:
+    - text: "Studenti nakon završenog prijediplomskog studija nerijetko upisuju diplomski studij da prodube svoja teorijska i praktična znanja, a dobar dio njih zapošljava se u različitim granama IT sektora. Studenti koji završe diplomski studij imaju otvorena vrata kako na domaćem tako i na međunarodnom tržištu za razvoj poslovnih informacijskih sustava."
+
+  utter_polaganje_kolegija:
+    - text: "U pravilu se kolegiji polažu tijekom semestra kroz razvijanje projekta/seminara i pristupanje kolokvijima ili izradom prezentacija i sl. Ukoliko student položi sve ishode učenja, ne mora pristupiti završnom ispitu, već mu se upisuje ocjena koju je ostvario tijekom semestra. Ostali su dužni položiti na završnom ispitu one ishode iz pojedinih kolegija koje nisu uspjeli položiti tijekom semestra. Važno je napomenuti da redovni studenti moraju položiti barem 50% ishoda iz svakoga kolegija, inače ne mogu pristupiti polaganju kroz završni ispit."
+
+  utter_prijava_ispita:
+    - text: "Svaki kolegij, bio položen ili ne tijekom semestra, mora se prijaviti preko Studomata kako bi student mogao pristupiti ispitu, odnosno da mu se ocjena upiše u sustav."
+
+  utter_popis_kolegija_prijediplomski:
+    - text: "Popis kolegija za stručni prijediplomski studij informatike možete vidjeti na web stranici: [Popis kolegija](https://www.veleri.hr/hr/studijski-programi/124/strucni-prijediplomski-studij-informatika)"
+
+  utter_popis_kolegija_diplomski:
+    - text: "Popis kolegija za stručni diplomski studij informacijske tehnologije u poslovnim sustavima možete vidjeti na web stranici: [Popis kolegija](https://www.veleri.hr/hr/studijski-programi/122/strucni-diplomski-studij-informacijske-tehnologije-u-poslovnim-sustavima)"
+
+  utter_najzahtjevniji_kolegiji:
+    - text: "Teško je odrediti koji je kolegij najzahtjevniji jer svaki kolegij ima svoje specifičnosti i područja istraživanja i rada. Neki potencijalni kolegiji koji bi bili najteži su možda oni koji imaju najveći broj ECTS bodova pa zahtijevaju više uloženih sati za ostvarivanje prolaza."
+
+  utter_semestralna_stručna_praksa:
+    - text: "Praksa je obavezni kolegij. Studenti sami traže vanjske firme gdje odrađuju praksu i vode evidenciju rada. Nakon završene prakse, dnevnik sa potpisom i ocjenom mentora se šalje voditelju stručne prakse koji daje konačnu ocjenu rada. Trenutno je voditeljica prakse dr. sc. socio. Sabrina Šuman i ukoliko imate upita o samoj praksi obratite se na e-mail voditeljice [e-mail](ssuman@veleri.hr)"
+
+  utter_izbor_mentora:
+    - text: "Mentora može samostalno izabrati student, a profesor može odbiti ili prihvatiti mentorstvo. Student bira mentora na način da uvidi koje ga područje rada najviše zanima te traži profesora iz pojedinog područja koji ga može usmjeravati i usavršavati ka izradi kvalitetnog završnog/diplomskog rada."
+
+  utter_prijava_završnog_diplomskog:
+    - text: "Prijava završnog/diplomskog rada vrši se u Studomatu pod odjeljkom Završetak studija."
+
+  utter_pisanje_završnog_diplomskog:
+    - text: "Pisanje završnog/diplomskog rada je obavezno. Treba poštovati pravilnik o pisanju završnih i diplomskih radova, te je jako bitno navesti sve izvore u skladu sa zaštitom autorskih prava. Rad se piše samostalno i isključivo na hrvatskom ili engleskom jeziku. Za više informacija o samoj strukturi završnog/diplomskog pogledajte [završni/diplomski](https://www.veleri.hr/sites/default/files/2025-01/upute-za-formalni-izgled-zavrsnog-i-dip...kog-rada-veleucilista-u-rijeci_0_0.pdf)"
+
+  utter_obrana_završnog_diplomskog:
+    - text: "Obrana završnog ili diplomskog rada traje otprilike 15–30 minuta i sastoji se od Vaše kratke prezentacije, pitanja komisije (najčešće tri člana) i rasprave o radu. Preporučuje se pripremiti jasnu i sažetu prezentaciju, dobro poznavati sadržaj rada te biti spremni na dodatna pitanja. Ako ne znate odgovor, budite iskreni i smireni – cilj je pokazati razumijevanje teme, a ne znati sve. Samo hrabro!"
+
+  utter_dekan:
+    - text: "Dekan Veleučilišta u Rijeci je mr. sc. Marino Golob, viši predavač. Za sve upite ili kontakte posjetite profil dekana [Dekan kontakt](https://www.veleri.hr/hr/profil/marino-golob)"
+
+  utter_prodekan_nastava:
+    - text: "Prodekan za nastavu i studentska pitanja je prof. dr. sc. Bojan Hlača, prof. struč. stud. Možete vidjeti kontakt informacije na sljedećem linku [Prodekan nastava](https://www.veleri.hr/hr/profil/bojan-hlaca)"
+
+  utter_prodekan_medjunarodna:
+    - text: "Prodekan za međunarodnu suradnju je dr. sc. socio. Bernard Vukelić, prof. struč. stud. Možete vidjeti kontakt informacije na sljedećem linku [Prodekan međunarodna](https://www.veleri.hr/hr/profil/bernard-vukelic)"
+
+  utter_prodekan_poslovni_odnosi:
+    - text: "Prodekan za poslovne odnose je dr. sc. tech. Saša Hirnig, prof. struč. stud. Možete vidjeti kontakt informacije na sljedećem linku [Prodekan poslovno](https://www.veleri.hr/hr/profil/sasa-hirnig)"
+
+  utter_prodekani_svi:
+    - text: |
+        - Prodekan za nastavu i studentska pitanja je prof. dr. sc. Bojan Hlača.
+        - Prodekan za međunarodnu suradnju je dr. sc. socio. Bernard Vukelić.
+        - Prodekan za poslovne odnose je dr. sc. tech. Saša Hiring.
+
+  utter_pročelinik_ikt_odjela:
+    - text: "Pročelnik Odjela za informacijske i komunikacijske tehnologije je: izv. prof. dr. sc. Alen Jakupović. Za više informacija posjetite [Pročelnik IKT](https://www.veleri.hr/hr/profil/alen-jakupovic)"
+
+  utter_mentoriranje_studenta:
+    - text: "Mentoriranje studenata ima za cilj pružiti podršku tijekom studiranja, unaprijediti kvalitetu obrazovanja, povećati uspješnost i završnost studenata te ih potaknuti na profesionalni razvoj, međunarodnu razmjenu, aktivno sudjelovanje u akademskim i stručnim događanjima te jačanje suradnje unutar akademske zajednice. Student dobiva mentora (nije mentor kao na završnom/diplomskom) na početku studiranja slučajnim odabirom."
+
+  utter_sto_je_iksica:
+    - text: "Studentska iksica, ili studentska iskaznica, je javna iskaznica koja dokazuje vaš studentski status. Pomoću iksice imate pravo na ostvarivanje raznih studentskih pogodnosti."
+
+  utter_izrada_iksice:
+    - text: "Iksicu izrađuje ona ustanova na koju je student upisan na prvu godinu, u slučaju IKT odjela, studentsku iksicu izrađuje Veleučilište u Rijeci. Iksicu su studenti dužni pokupiti u studentskoj referadi."
+
+  utter_svrha_iksice:
+    - text: |
+        - Svrha iksice je dokaz da je student pripadnik nekog visokog učilišta u Republici Hrvatskoj.
+        - Pomoću iksice studenti ostvaruju razne popuste i subvencije na prehranu.
+        - Iksica služi kao provjera identiteta prilikom pristupanja ispitu.
+
+  utter_nestanak_iksice:
+    - text: "Ukoliko ste izgubili studentsku iskaznicu, molimo Vas da što prije kontaktirate studentsku referadu radi poništenja stare iskaznice i izrade nove."
+
+  utter_jmbag:
+    - text: "Upisom na neku visokoškolsku ustanovu dobiva se JMBAG, odnosno Jedinstveni matični broj akademskog građana. Svaki student ima jedan JMBAG, bez obzira na to studira li na više fakulteta ili mijenja li studijske programe. Jedinstven je i označuje osobu koja se obrazuje ili koja se obrazovala na nekoj visokoškolskoj instituciji."
+
+  utter_kolegij:
+    - text: "Kolegij je skupina stručnih ljudi iste struke ili zvanja, skupina studenata koji slušaju ista predavanja, ili samo predavanje/tečaj iz nekog predmeta na visokim učilištima. U suštini, ono što se naziva predmet u školama, na fakultetu je kolegij."
+
+  utter_ects_značenje:
+    - text: "ECTS, ili Europski sustav prijenosa i prikupljanja bodova, alat je Bolonjskog procesa za veću transparentnost i usporedivost studija u Europskom prostoru visokog obrazovanja, koji studentima olakšava priznavanje studija i kvalifikacija u inozemstvu. ECTS bodovi mjere studentsko opterećenje, pri čemu jedan bod obično predstavlja 25 do 30 sati rada, uključujući predavanja, učenje i druge aktivnosti."
+
+  utter_ects_ostvarivanje:
+    - text: "ECTS se ostvaruje tako što student zadovolji sve ishode za pojedine kolegije, odnosno kada student položi kolegij. Bez obzira na ocjenu koju je student ostvario iz kolegija, ako je ocjena pozitivna, student dobiva onoliko ECTS bodova koliko je predviđeno za pojedini kolegij."
+
+  utter_semestar_info:
+    - text: "Semestar je nešto slično kao polugodište u školskom sustavu. Počinje zimskim (neparnim), traje do kraja siječnja/početka veljače. Potom nastupa razdoblje ispitnih rokova. Novi semestar, tj. ljetni (parni) počinje u ožujku i traje do prvog dijela lipnja, nakon čega nastupaju ispitni rokovi. Stručni prijediplomski studij informatike ima šest semestra, odnosno četiri na diplomskom studiju informacijske tehnologije."
+
+  utter_studomat:
+    - text: "Studomat je modul Informacijskog sustava visokog obrazovanja namijenjen studentima da prijavljuju i odjavljuju ispite. Također, student može vidjeti udio ostvarenih ECTS bodova, koliki je prosjek studiranja i sl."
+
+  utter_studomat_prijava_ispita:
+    - text: "Kada semestar završi, predmetni profesor otvara mogućnost prijave ispita u ISVU. Prijava ispita se vrši tako da se na glavnom izborniku u Studomatu klikne na ISPITI -> Prijava ispita. Ispit treba prijaviti minimalno 2 dana prije pristupanja ispitnom roku."
+
+  utter_studomat_odjava_ispita:
+    - text: "Ispit možete odjaviti tako što na glavnom meniju odaberete ISPIT -> Odjava ispita. Ispit možete odjaviti najkasnije 24 sata prije početka ispita, naknadno odjavljivanje nije moguće."
+
+  utter_studomat_nemogucnost_prijave:
+    - text: "Postoji više razloga zašto ne možete prijaviti ispit. Jedan od mogućih razloga može biti da predmetni profesor još nije dao dozvolu za prijavu u ISVU. Također, ako niste ispunili sve uvjete koje je potrebno za pristupanje završnom ispitu, tada Vam također prijava nije dostupna. Savjetujem da se obratite nositelju kolegija ako mislite da imate pravo polaganja ispita."
+
+  utter_studomat_ponovna_prijava_ispita:
+    - text: "Imate pravo 3 puta izaći na ispit iz istoga kolegija. Ukoliko niste zadovoljni ocjenom, smatrate da možete bolje, slobodno možete prijaviti sljedeći rok (drugi ili treći) i pristupiti ispitu. Važno je znati da ukoliko ostvarite lošiju ocjenu, ista ta ocjena se upisuje u ISVU jer je zaključna ocjena kolegija zadnja ocjena ispita kojem je student pristupio."
+
+  utter_studomat_pad_ispita:
+    - text: "Nemojte gubiti nadu, ništa nije strašno ako se ispit padne, to je normalni dio studiranja i ponekad poželjan. Važno je, ukoliko Vam je ostalo još rokova za polaganje, da što prije prijavite ispit i krenete se pripremati da položite kolegij. Ukoliko ste pali ispit na 3. roku, nažalost to je pad kolegija i morate ga ponovno upisati."
+
+  utter_moodle_merlin:
+    - text: "Merlin je elektronička platforma razvijena za potrebe hrvatskog visokog obrazovanja. Temelji se na sustavu Moodle, a Centar za e-učenje Srca ga je razvio u jedinstveno i prilagođeno rješenje. Na Merlinu možete pregledavati kolegije i njihov sadržaj, dobiti uvid u objave profesora vezano za kolegij, pronaći radne materijale, te slati projekte ili zadaće."
+
+  utter_silabus_kolegija:
+    - text: "Syllabus kolegija je pisani dokument, sličan planu rada ili rasporedu, koji daje kratki pregled ključnih informacija o određenom kolegiju. Glavna mu je svrha objasniti studentima zašto kolegij postoji, kako će se odvijati nastava, koje će se teme obrađivati, te koje će radnje studenti trebati poduzeti da bi uspješno položili predmet."
+
+  utter_outlook:
+    - text: "Microsoft Outlook je program za primanje i slanje e-pošte, organizaciju vremena pomoću kalendara, te izradu adresara i dodavanje kontakata. Proizvod je tvrtke Microsoft, a sastavni je dio programskog paketa Microsoft Office. Na Outlooku je najčešća komunikacija nastavnik-student."
+
+  utter_brucoš:
+    - text: "Brucoš je student prve godine nekog fakulteta, podrazumijeva se da ga prati neiskustvo, ali i ulazak u svijet odraslih i mijenjanje prijašnjih navika."
+
+  utter_apsolvent:
+    - text: "Apsolvent je student koji je ispunio sve uvjete za završetak studija, odnosno odslušao je sve predmete i položio sve ispite, ali još nije diplomirao. Drugim riječima, apsolvent je osoba koja je završila sve akademske obveze osim obrane završnog/diplomskog rada."
+
+  utter_alumni:
+    - text: "Alumni je latinska riječ koja označava bivše učenike ili studente neke visokoškolske ustanove."
+
+  utter_kabinet:
+    - text: "Kabinet je ured profesora. U kabinetu profesori pripremaju rad, ispravljaju kolokvije, drže konzultacije sa studentima i sl."
+
+  utter_konzultacije:
+    - text: "Konzultacije su neka vrsta sastanka između profesora i studenta. Student na konzultacijama traži pomoć oko gradiva, traži savjete za učenje ili diskutiraju o ostvarenim rezultatima i sl. Konzultacije se održavaju prema rasporedu koji stoji na službenim stranicama predmetnog profesora u kabinetu, a nerijetko se konzultacije mogu održati i online."
+
+  utter_terminski_plan:
+    - text: "Terminski plan je raspored predavanja na kojem se nalazi kada se odrađuje koje gradivo, koje ishode pokriva, kao i kada se nalaze pisane provjere ili obrane projekta."
+
+  utter_seminar:
+    - text: "Seminar je projektni rad koji studenti pišu kako bi istražili određenu temu i razvili svoje istraživačke vještine. Cilj je produbljivanje znanja u specifičnom području."
+
+  utter_kolokvij:
+    - text: "Kolokvij je pismeni ili usmeni ispit tijekom semestra koji omogućuje studentima da provjere svoje znanje i napredak u učenju."
+
+  utter_kontinuirano_pracenje:
+    - text: "Kontinuirano praćenje je proces evaluacije studenata kroz različite aktivnosti tijekom semestra kako bi se osiguralo pravovremeno učenje i napredak."
+
+  utter_ishodi:
+    - text: "Ishodi učenja predstavljaju ciljeve koje student treba postići tijekom kolegija, poput stjecanja specifičnih znanja i vještina."
+
+  utter_nositelj_kolegija:
+    - text: "Nositelj kolegija je osoba odgovorna za strukturiranje i izvođenje kolegija te nadgledanje svih nastavnih aktivnosti."
+
+  utter_asistent_kolegija:
+    - text: "Asistent kolegija pomaže u izvođenju nastave kroz vježbe, radionice ili konzultacije, i često je odgovoran za podršku studentima tijekom semestra."
+
+  utter_referada:
+    - text: "Referada je studentska služba koja pruža administrativnu podršku studentima, uključujući informacije o upisu, stipendijama i drugim studentskim pitanjima."
+
+  utter_redovni_student:
+    - text: "Redovni student je onaj koji pohađa studij po punom programu i uživa određene beneficije, poput subvencionirane prehrane i zdravstvenog osiguranja."
+
+  utter_izvanredni_student:
+    - text: "Izvanredni student je onaj koji studira uz rad ili ne može redovito pohađati nastavu. Izvanredni studenti često imaju fleksibilnije opcije studiranja."
+
+  utter_redovni_izvaredni_razlike:
+    - text: "Razlika između redovnih i izvanrednih studenata odnosi se na način pohađanja i prava. Redovni studenti obično pohađaju većinu predavanja, dok izvanredni studenti imaju više fleksibilnosti."
+
+  utter_studenski_posao:
+    - text: "Da, kao student, imate pravo raditi putem studentskog servisa. Redovni i izvanredni studenti mogu raditi studentske poslove. Preporučljivo je kontaktirati svoj studentski servis za detalje."
+
+  utter_prehrana:
+    - text: "Studenti imaju pravo na subvencioniranu prehranu u studentskim restoranima. Za ostvarivanje ovog prava, potrebna je studentska iskaznica, a pravo ostvaruju najčešće redovni studenti, mada i izvanredni mogu, uz nešto višu cijenu, jesti u studentskom centru po i dalje prihvatljivim ponudama."
+
+  utter_erasmus:
+    - text: "Erasmus program omogućava studentima studiranje i stjecanje iskustva u inozemstvu. Za prijavu su potrebni određeni dokumenti i ispunjenost uvjeta. Preporučujemo posjet uredu Erasmus mobilnosti na vašem fakultetu za detaljne informacije. Na Erasmus putovanje imaju pravo ići i redoviti i izvanredni studenti."
+
+  utter_knjižnica_radno_vrijeme_kontakt:
+    - text: "Radno vrijeme knjižnice Veleučilišta u Rijeci možete pronaći na stranici [Knjižnica kontakt](https://www.veleri.hr/hr/o-knjiznici)"
+
+  utter_referada_radno_vrijeme_kontakt:
+    - text: "Radno vrijeme studentske referade Veleučilišta u Rijeci možete pronaći na stranici [Referada kontakt](https://www.veleri.hr/hr/studentska-referada)"
+
+  utter_upis_prijediplomski:
+    - text: "Više o samim upisima na prijediplomski studij informatike možete provjeriti na stranici [Informatika prijediplomski](https://veleri.hr/hr/upisi-u-prvu-godinu-strucnih-prijediplomskih-studija)"
+
+  utter_upis_diplomski:
+    - text: "Više o samim upisima na diplomski stručni studij informacijske tehnologije u poslovnim sustavima možete provjeriti na stranici [Informacijske tehnologije-diplomski](https://veleri.hr/hr/upisi-u-prvu-godinu-strucnih-diplomskih-studija)"
+
+  utter_troškovi_studija:
+    - text: "Troškovi studiranja utvrđuju se Odlukom o modelu participacije studenata u troškovima studija (objavljuje se na web stranici) koju donosi Upravno vijeće Veleučilišta u Rijeci uz prethodno pribavljenu suglasnost Ministarstva znanosti, obrazovanja i mladih."
+
+  utter_no_course_info:
+    - text: "Nažalost, ne mogu pronaći informacije o tom kolegiju."
+
+  utter_izborni_kolegiji:
+    - text: "Izborni kolegiji su vrsta kolegija da student usmjeri svoj razvoj i stejcanje vještina iz onoga područja koje ga najviše privlači. Studenti obično na upisu u višu godinu biraju između ponuđenih 2-3 izborna kolegija i obično se oblučuje za 1-2 kolegija koja želi slušati. Svi izborni predemti jednako su važni kada se upisuju i imaju ista pravila za polaganje i ocjenjivanje kao i obavezni kolegij. Za popis izbornih kolegija molim Vas da posjetite službenu stranicu Veleučilišta u Rijeci."
+
+  utter_rastanak:
+    - text: "Pozdrav i ugodan ostatak dana :)"
+
+  utter_zahvala:
+    - text: "Drago mi je da sam Vam uspio pomoći, ako još nešto zatrebate, tu sam da Vam pomognem."
+
+  utter_outside_scope:
+    - text: "Žao mi je, ne mogu odgovoriti na to pitanje jer se ne odnosi na IKT odjel Veleučilišta u Rijeci."
+
+actions:
+    - action_provide_course_link
+    - action_show_kolegij_nositelji
+    - action_dohvati_podatke

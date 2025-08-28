@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>IKT BOT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            height: 100vh;
+        }
+
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 900px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.15);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #0d6efd;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+
+        .chat-window {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: #fafafa;
+        }
+
+        .message {
+            padding: 12px 16px;
+            border-radius: 10px;
+            max-width: 70%;
+            line-height: 1.5;
+            word-break: break-word;
+        }
+
+        .user-message {
+            background-color: #d1e7dd;
+            align-self: flex-end;
+        }
+
+        .bot-message {
+            background-color: #f8d7da;
+            align-self: flex-start;
+        }
+
+        .input-area {
+            display: flex;
+            border-top: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+        input {
+            flex: 1;
+            padding: 15px;
+            font-size: 16px;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            padding: 15px 25px;
+            font-size: 16px;
+            background-color: #0d6efd;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        a {
+            color: #0d6efd;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .message {
+                max-width: 90%;
+            }
+
+            .chat-container {
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="header">IKTboT</div>
+
+    <div class="chat-window" id="chat-window"></div>
+
+    <div class="input-area">
+        <input type="text" id="user-input" placeholder="Upišite poruku...">
+        <button onclick="sendMessage()">Pošalji</button>
+    </div>
+</div>
+
+<script>
+    const chatWindow = document.getElementById("chat-window");
+    const userInput = document.getElementById("user-input");
+
+    function scrollToBottom() {
+        chatWindow.scrollTop = chatWindow.scrollHeight;
+    }
+
+    function addMessage(message, sender) {
+        const messageElement = document.createElement("div");
+        messageElement.className = `message ${sender === 'user' ? 'user-message' : 'bot-message'}`;
+
+        // Ispravan regex za klikabilne linkove
+        if (sender === 'bot') {
+            message = message.replace(/(https?:\/\/[^\s<>()]+[^.,;:!?()\[\]\s<])/g, '<a href="$1" target="_blank">$1</a>');
+        }
+
+        messageElement.innerHTML = message;
+        chatWindow.appendChild(messageElement);
+        scrollToBottom();
+    }
+
+    function sendMessage() {
+        const message = userInput.value.trim();
+        if (!message) return;
+
+        addMessage(message, 'user');
+        userInput.value = '';
+
+        fetch("http://localhost:5005/webhooks/rest/webhook", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ sender: "user", message: message })
+        })
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(response => {
+                if (response.text) {
+                    addMessage(response.text, 'bot');
+                }
+            });
+        })
+        .catch(error => {
+            console.error("Greška:", error);
+            addMessage("Greška u komunikaciji s botom.", 'bot');
+        });
+    }
+
+    userInput.addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            sendMessage();
+        }
+    });
+</script>
+
+</body>
+</html>
