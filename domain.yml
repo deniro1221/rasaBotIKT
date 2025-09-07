@@ -82,7 +82,6 @@ intents:
   - erasmus
   - referada_radno_vrijeme_kontakt
   - knjižnica_radno_vrijeme_kontakt
-  - outside_scope
   - silabus_kolegija
   - prehrana
 

@@ -407,10 +407,7 @@ stories:
       - intent: kontakt_nastavnici
       - action: action_dohvati_podatke
 
-  - story: Pitanje koje je izvan područja rada
-    steps:
-      - intent: outside_scope
-      - action: utter_outside_scope
+
 
   - story: Daj info o kolegiju
     steps:
