@@ -84,6 +84,8 @@ intents:
   - knjižnica_radno_vrijeme_kontakt
   - silabus_kolegija
   - prehrana
+  - pitaj_za_ispitne_rokove
+  - nlu_fallback
 
 
 entities:
@@ -110,7 +112,7 @@ entities:
   - služba
   - usluga
   - knjižnica
-  - nlu_fallback
+
 
 
 slots:
@@ -377,6 +379,9 @@ responses:
 
   utter_fallback_ikt:
     - text: "Žao mi je, ne mogu odgovoriti na to pitanje jer se ne odnosi na IKT odjel Veleučilišta u Rijeci."
+
+  utter_pitaj_za_ispitne_rokove:
+    - text: "Ispitne rokove možete naći na sljedećem linku: [ispitni rokovi](https://www.veleri.hr/hr/raspored-ispita)"
 
 actions:
     - action_provide_course_link

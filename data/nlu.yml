@@ -1227,6 +1227,23 @@ nlu:
     
 - intent: nlu_fallback
 
+- intent: pitaj_za_ispitne_rokove
+  examples: |
+    - kada su ispitni rokovi?
+    - kada u datumi ispitnih rokova?
+    - gdje mogu pronaći informacije vezane za ispitne rokove?
+    - kada se održavaju ispitni rokovi?
+    - ispitni rokovi?
+    - gdje da nađem datume ispitnih rokova?
+    - kako saznati kada su ispiti?
+    - kada su ispiti?
+    - zanima me raspored ispita?
+    - zanima me održavanje ispitnih rokova?
+    - molim info za ispitne rokove?
+    - zanimaju me kada su ispiti?
+
+    
+
 
 # Lookup table za studij
 - lookup: studij

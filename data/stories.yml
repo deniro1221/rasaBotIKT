@@ -413,3 +413,8 @@ stories:
     steps:
       - intent: opis_kolegija
       - action: action_provide_course_link
+
+  - story: Daj info o ispitnim rokovima
+    steps:
+      - intent: pitaj_za_ispitne_rokove
+      - action: utter_pitaj_za_ispitne_rokove
