@@ -76,7 +76,7 @@ class ActionShowKolegijNositelji(Action):
         return []
 
 
-# Klasa za dohvat nositelja i asistenata kolegija
+# Klasa za dohvat podataka o nastavniku
 class ActionDohvatiPodatke(Action):
 
     def name(self) -> str:

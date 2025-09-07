@@ -111,6 +111,7 @@ entities:
   - služba
   - usluga
   - knjižnica
+  - nlu_fallback
 
 
 slots:
@@ -375,7 +376,7 @@ responses:
   utter_zahvala:
     - text: "Drago mi je da sam Vam uspio pomoći, ako još nešto zatrebate, tu sam da Vam pomognem."
 
-  utter_outside_scope:
+  utter_fallback_ikt:
     - text: "Žao mi je, ne mogu odgovoriti na to pitanje jer se ne odnosi na IKT odjel Veleučilišta u Rijeci."
 
 actions:

@@ -1,0 +1,5 @@
+rules:
+- rule: Reagiraj na fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_fallback_ikt

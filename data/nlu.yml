@@ -1225,50 +1225,7 @@ nlu:
     - kontakt informacije i radno vrijeme [knjižnice](knjižnica)
     - kada je službeni rad [knjižnice](knjižnica)?
     
-- intent: outside_scope
-  examples: |
-    - koja je razlika između mitologije i povijesti?
-    - kako fotosinteza utječe na život na zemlji?
-    - zašto je važno očuvati bioraznolikost?
-    - što znači pojam „građanska odgovornost“?
-    - koji su osnovni elementi dramskog teksta?
-    - zašto se zemlja okreće oko sunca?
-    - kako bi izgledao svijet bez interneta?
-    - tko je napisao roman „zločin i kazna“?
-    - na koji način kultura utječe na naš identitet?
-    - koje su posljedice klimatskih promjena?
-    - što podrazumijevamo pod izrazom „umjetna inteligencija“?
-    - zašto se povijest proučava u školama?
-    - koja je razlika između znanosti i pseudoznanosti?
-    - kako prepoznati manipulaciju u medijima?
-    - tko su bili iliri i kakvu su ulogu imali u hrvatskoj povijesti?
-    - što je ironija i kako se koristi u književnosti?
-    - koje su glavne značajke demokracije?
-    - zašto je važno čitati knjige?
-    - kako se gradi argumentirana rasprava?
-    - koji su osnovni elementi glazbene kompozicije?
-    - što znače izrazi „denotacija“ i „konotacija“ u jeziku?
-    - koje su razlike između fikcije i nefikcije?
-    - zašto je voda nezamjenjiva za život?
-    - kako funkcionira ljudski mozak?
-    - što označava pojam „digitalna pismenost“?
-    - tko je bio nikola tesla i zašto je važan?
-    - kako nastaje duga?
-    - zašto ljudi putuju?
-    - koja je uloga umjetnosti u društvu?
-    - kako tehnologija mijenja način na koji komuniciramo?
-    - što se podrazumijeva pod „kritičkim mišljenjem“?
-    - kako su nastali kontinenti?
-    - zašto je važno poštivati pravila u zajednici?
-    - koji su rizici pretjeranog korištenja društvenih mreža?
-    - kako prepoznati lažne vijesti?
-    - što je metafora i kako se koristi u svakodnevnom govoru?
-    - kako funkcionira parlamentarni sustav vlasti?
-    - zašto je matematika temelj mnogih znanosti?
-    - koje su temeljne etičke vrijednosti?
-    - kako nastaju potresi?
-    - zašto ljudi stvaraju umjetnost?
-    - što znače osnovne boje i kako se dobivaju sekundarne?
+- intent: nlu_fallback
 
 
 # Lookup table za studij
